@@ -1,64 +1,134 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
-const FlipLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+const links = [
+  { href: "/",        label: "Home" },
+  { href: "/about",   label: "About" },
+  { href: "/projects",label: "Projects" },
+  { href: "/blogs",   label: "Blogs" },
+];
+
+function FlipLink({ href, label, active }: { href: string; label: string; active: boolean }) {
   return (
-    <motion.div
-      whileHover="hover"
-      className="relative block overflow-hidden font-antonio font-bold uppercase text-[15px] tracking-[1px] leading-[1]"
-      style={{ perspective: "1200px", transformStyle: "preserve-3d" }}
-    >
+    <Link href={href}>
       <motion.div
-        variants={{
-          initial: { y: 0, rotateX: 0 },
-          hover: { y: "-100%", rotateX: 90 },
-        } as any}
-        transition={{ duration: 0.3, ease: "easeOut" }}
-        className="flex items-center justify-center"
+        className="relative overflow-hidden cursor-pointer"
+        whileHover="hover"
+        initial="rest"
+        animate="rest"
+        style={{ perspective: 800 }}
       >
-        <Link href={href}>{children}</Link>
+        {/* front face */}
+        <motion.span
+          variants={{ rest: { y: 0 }, hover: { y: "-110%" } }}
+          transition={{ duration: 0.28, ease: [0.33, 1, 0.68, 1] }}
+          className={`block font-antonio font-bold uppercase text-[13px] tracking-[1.5px] leading-none
+            ${active ? "text-accent" : "text-text"}`}
+        >
+          {label}
+        </motion.span>
+        {/* back face */}
+        <motion.span
+          variants={{ rest: { y: "110%" }, hover: { y: 0 } }}
+          transition={{ duration: 0.28, ease: [0.33, 1, 0.68, 1] }}
+          className="absolute inset-0 block font-antonio font-bold uppercase text-[13px] tracking-[1.5px] leading-none text-accent"
+        >
+          {label}
+        </motion.span>
       </motion.div>
-      <motion.div
-        variants={{
-          initial: { y: "100%", rotateX: -90, position: "absolute", top: 0, left: 0 },
-          hover: { y: 0, rotateX: 0, position: "absolute", top: 0, left: 0 },
-        } as any}
-        transition={{ duration: 0.3, ease: "easeOut" }}
-        className="flex items-center justify-center text-primary"
-      >
-        <Link href={href}>{children}</Link>
-      </motion.div>
-    </motion.div>
+    </Link>
   );
-};
+}
 
 export default function Header() {
-  return (
-    <motion.header 
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 max-w-[1200px] mx-auto mix-blend-exclusion"
-    >
-      <div className="flex items-center gap-2">
-        <div className="w-2 h-2 rounded-full bg-primary" />
-        <span className="font-antonio font-bold uppercase tracking-wider text-[15px]">Manish Bhandari</span>
-      </div>
-      
-      <nav className="hidden md:flex items-center gap-8 bg-cardBorder/30 backdrop-blur-md px-6 py-3 rounded-full border border-white/5">
-        <FlipLink href="/">Home</FlipLink>
-        <FlipLink href="/about">About</FlipLink>
-        <FlipLink href="/projects">Projects</FlipLink>
-        <FlipLink href="/blogs">Blogs</FlipLink>
-      </nav>
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      <div className="flex items-center gap-6">
-        <a href="#contact" className="font-inter text-sm text-textMuted hover:text-white transition-colors duration-300">
-          Contact
-        </a>
-      </div>
-    </motion.header>
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <>
+      <motion.header
+        initial={{ y: -80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-5 px-4 pointer-events-none"
+      >
+        <div
+          className={`nav-glass pointer-events-auto flex items-center justify-between gap-8 px-5 py-3 w-full max-w-[900px] transition-all duration-300
+            ${scrolled ? "shadow-lg" : ""}`}
+        >
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2 shrink-0">
+            <span className="font-antonio font-bold text-[15px] uppercase tracking-[1.5px] text-text whitespace-nowrap">
+              Manish Bhandari
+            </span>
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-6">
+            {links.map((l) => (
+              <FlipLink key={l.href} {...l} active={pathname === l.href} />
+            ))}
+          </nav>
+
+          {/* Available badge */}
+          <div className="hidden md:flex items-center gap-2 shrink-0">
+            <span className="w-2 h-2 rounded-full bg-green animate-pulse" />
+            <span className="font-inter text-[12px] text-muted">Available for work</span>
+          </div>
+
+          {/* Mobile hamburger */}
+          <button
+            className="md:hidden flex flex-col gap-1.5 p-1"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`block h-0.5 w-5 bg-text transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+            <span className={`block h-0.5 w-5 bg-text transition-all ${menuOpen ? "opacity-0" : ""}`} />
+            <span className={`block h-0.5 w-5 bg-text transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          </button>
+        </div>
+      </motion.header>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-[72px] left-4 right-4 z-40 nav-glass rounded-2xl p-6 flex flex-col gap-4 md:hidden"
+          >
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setMenuOpen(false)}
+                className={`font-antonio font-bold uppercase text-[18px] tracking-[2px] ${
+                  pathname === l.href ? "text-accent" : "text-text"
+                }`}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <div className="flex items-center gap-2 mt-2">
+              <span className="w-2 h-2 rounded-full bg-green animate-pulse" />
+              <span className="font-inter text-[12px] text-muted">Available for work</span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
