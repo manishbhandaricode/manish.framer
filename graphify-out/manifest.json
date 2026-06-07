@@ -1,86 +1,1190 @@
 {
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\eslint.config.mjs": {
-    "mtime": 1780828552.5656998,
-    "hash": "dfa1f5f6a7037bf39dc510f30b180002"
-  },
   "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\next-env.d.ts": {
     "mtime": 1780828552.7441885,
     "hash": "2a74d3909800ca5467fa83b0ab4a4890"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\next.config.ts": {
-    "mtime": 1780828552.7612545,
-    "hash": "9b77af189a21a7a64e4bd7a426f64176"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\script_main.Cu7JxU37.mjs": {
+    "mtime": 1780830706.5192997,
+    "hash": "637a16095e2f3588574b893c179106b9"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\postcss.config.mjs": {
-    "mtime": 1780828552.616427,
-    "hash": "239f3ebf717465dc636818a1a619398d"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\layout.tsx": {
-    "mtime": 1780828813.2688594,
-    "hash": "273e176907529b33d1decb06ee698a49"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\page.tsx": {
-    "mtime": 1780828841.2013974,
-    "hash": "1e4163f1f2b2139754ec0e98dedb69eb"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\about\\page.tsx": {
-    "mtime": 1780828863.9900126,
-    "hash": "b270b0dc7b620d6feafc35f953968ce7"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\blogs\\page.tsx": {
-    "mtime": 1780828888.4100816,
-    "hash": "abb4f6f50a2a66ba69b60258ee4ef564"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\blogs\\[id]\\page.tsx": {
-    "mtime": 1780828909.082423,
-    "hash": "6490e2337b478382dec67915514b96d1"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\projects\\page.tsx": {
-    "mtime": 1780828877.2376747,
-    "hash": "b6cfe179fa6f63ce4759a9a80532e963"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\projects\\[id]\\page.tsx": {
-    "mtime": 1780828908.9528284,
-    "hash": "42d1f4fd8aab288b8b9eaa6b843e2c20"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\components\\Footer.tsx": {
-    "mtime": 1780828961.0095532,
-    "hash": "b2f1e237c07bcb5861cf63a63b3fa7d7"
-  },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\components\\Header.tsx": {
-    "mtime": 1780828792.0380838,
-    "hash": "e389b72fdaa873fa44d119a3e459055b"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\about.html": {
+    "mtime": 1780830728.34463,
+    "hash": "ec29665c7951b3e9b55a172106bfd67d"
   },
   "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\AGENTS.md": {
     "mtime": 1780828697.5914555,
     "hash": "9e09241799026ac05be315a2f0b50055"
   },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\blogs.html": {
+    "mtime": 1780830730.037796,
+    "hash": "31e647f83815ef35cd4f8d6c0ac74df1"
+  },
   "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\CLAUDE.md": {
     "mtime": 1780828697.5919802,
     "hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\competitive-analysis-for-the-modern-startup.html": {
+    "mtime": 1780830818.5117626,
+    "hash": "bb4aca36b7e1f00bd14d48f20a51bf53"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\crystal-peak.html": {
+    "mtime": 1780830717.02733,
+    "hash": "ec9940221c519b7de894bae6cd81793e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\dezerv.html": {
+    "mtime": 1780830740.0755556,
+    "hash": "4f41f575bc280533fd703b9ffdd57eaf"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\from-beta-users-to-brand-ambassadors.html": {
+    "mtime": 1780830829.5965016,
+    "hash": "f55acb6d8785a57caa7bd30dcb6e2d1a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\hospital-management-system.html": {
+    "mtime": 1780830799.467238,
+    "hash": "5c672c23730279a312beaccac733070c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\how-to-scale-quality-with-beta-testing.html": {
+    "mtime": 1780830750.1889596,
+    "hash": "a38d9da0020c3ed26627758692206e68"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\index.html": {
+    "mtime": 1780830706.3011756,
+    "hash": "b28dd314ffff439b612c84d5498fb1a5"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\kuvera-analysis.html": {
+    "mtime": 1780830777.6311324,
+    "hash": "878ec6a5aa55f9ee8893fc9b27fc694c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\projects.html": {
+    "mtime": 1780830730.3566284,
+    "hash": "485a2c8d23dfd733bd7261d099215fca"
   },
   "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\README.md": {
     "mtime": 1780828552.5296395,
     "hash": "f15aaa42d5d299d091b1171097ea56ad"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\file.svg": {
-    "mtime": 1780828552.6342309,
-    "hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\shopease-redesign-sprint.html": {
+    "mtime": 1780830769.8509164,
+    "hash": "9616f1992dfe576683858dc084e8fb4c"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\globe.svg": {
-    "mtime": 1780828552.6578295,
-    "hash": "2aaafa6a49b6563925fe440891e32717"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\the-content-flywheel.html": {
+    "mtime": 1780830762.3530066,
+    "hash": "781b5a1bc04616f30aa7ab9d7972bb22"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\next.svg": {
-    "mtime": 1780828552.678984,
-    "hash": "8e061864f388b47f33a1c3780831193e"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\the-strategic-audit.html": {
+    "mtime": 1780830839.9021611,
+    "hash": "17ba3c1a7a654a9c3734d93584e02236"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\vercel.svg": {
-    "mtime": 1780828552.6985035,
-    "hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\unlocking-india\u2019s-untapped-investor-segments.html": {
+    "mtime": 1780830751.079903,
+    "hash": "d17920efe6f5b4209a60845798f25b2a"
   },
-  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\window.svg": {
-    "mtime": 1780828552.7165225,
-    "hash": "a2760511c65806022ad20adf74370ff3"
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\user-stories.html": {
+    "mtime": 1780830788.6399274,
+    "hash": "d05422c0ab06b136fd5fa6c794228a7a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1bfG3QaDL25oMcjBIUEv0fEiY.png": {
+    "mtime": 1780830840.2337232,
+    "hash": "b77a589dfc33206ee6de3b9868c2742f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1bfG3QaDL25oMcjBIUEv0fEiY_1.png": {
+    "mtime": 1780830840.30409,
+    "hash": "4ce841f84b0d292a6b6646521c21c219"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1bfG3QaDL25oMcjBIUEv0fEiY_2.png": {
+    "mtime": 1780830840.3499622,
+    "hash": "7fff8a1435c5fdaa25488c8d42b7db8a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1bfG3QaDL25oMcjBIUEv0fEiY_3.png": {
+    "mtime": 1780830840.4580119,
+    "hash": "f6c17e05b362811a52c6c67ffc67ac49"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1BhVL30rFSXTOSpuUdxbO9lOiw.png": {
+    "mtime": 1780830840.4871335,
+    "hash": "f4219dfebf14eec361d99f101abc74cf"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1BhVL30rFSXTOSpuUdxbO9lOiw_1.png": {
+    "mtime": 1780830840.5870314,
+    "hash": "1f77aef1b34809384995be07906102c9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1BhVL30rFSXTOSpuUdxbO9lOiw_2.png": {
+    "mtime": 1780830840.6347566,
+    "hash": "3e57a21043505036eafb2ed56f2064d7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\1BhVL30rFSXTOSpuUdxbO9lOiw_3.png": {
+    "mtime": 1780830840.6974044,
+    "hash": "ca8a7eec4bc5f6475ad94f37bcc18d64"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\3QypXGCfC9hBhO8kh4lnLSwM4.png": {
+    "mtime": 1780830842.197835,
+    "hash": "46fca7f5d9abe808a195325496eeba3f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\3QypXGCfC9hBhO8kh4lnLSwM4_1.png": {
+    "mtime": 1780830842.2615666,
+    "hash": "b7086d27d8501aea70a0b499eb14c205"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\3QypXGCfC9hBhO8kh4lnLSwM4_2.png": {
+    "mtime": 1780830842.3071709,
+    "hash": "0d8ef698aa9d109af15fe04379701568"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\3QypXGCfC9hBhO8kh4lnLSwM4_3.png": {
+    "mtime": 1780830842.3578703,
+    "hash": "d15b567427ac69ebf0ac6c169230f082"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\5FJg18AlEDy2piNU95cv4tZ0Gf8.png": {
+    "mtime": 1780830841.0751138,
+    "hash": "b598bc5eb3df484e7347d678df97744c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\5FJg18AlEDy2piNU95cv4tZ0Gf8_1.png": {
+    "mtime": 1780830841.1185482,
+    "hash": "9a07fbcb849548465b9793dd6457a6be"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\5FJg18AlEDy2piNU95cv4tZ0Gf8_2.png": {
+    "mtime": 1780830841.15327,
+    "hash": "81e1a45080da091027df566c1e677a69"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\5FJg18AlEDy2piNU95cv4tZ0Gf8_3.png": {
+    "mtime": 1780830841.1842055,
+    "hash": "0d945d75361d00e7e0d7f744b98b8c73"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\5tSJmARBVby1O8BOnEWShoRvw.jpg": {
+    "mtime": 1780830799.5291698,
+    "hash": "f1b60617eb4b04a77adc533bea706249"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\6vU9kMfZzkW1VYKn6Um6diQRPE.png": {
+    "mtime": 1780830841.516369,
+    "hash": "57ac07fdd437caf3c261e50b95f1a2ac"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\6vU9kMfZzkW1VYKn6Um6diQRPE_1.png": {
+    "mtime": 1780830841.6147125,
+    "hash": "be0783d9554a36894b90db9a70e7888f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\6vU9kMfZzkW1VYKn6Um6diQRPE_2.png": {
+    "mtime": 1780830841.6347928,
+    "hash": "731a6a18e2e54d56b5e653996efba5c5"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\6vU9kMfZzkW1VYKn6Um6diQRPE_3.png": {
+    "mtime": 1780830841.6902606,
+    "hash": "2bc1238428db28b80e39c64e854fe840"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7DOcYUKOSIAumcKyujKffNXwu8.png": {
+    "mtime": 1780830841.9548357,
+    "hash": "060c69a71609ec8fc4e3afdef5db3d93"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7DOcYUKOSIAumcKyujKffNXwu8_1.png": {
+    "mtime": 1780830842.045162,
+    "hash": "a68164627e4802b083969a8416cbbdef"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7DOcYUKOSIAumcKyujKffNXwu8_2.png": {
+    "mtime": 1780830842.0663614,
+    "hash": "0814ae9a9b7c6daf228447d9328b7f8c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7DOcYUKOSIAumcKyujKffNXwu8_3.png": {
+    "mtime": 1780830842.1063182,
+    "hash": "38e479f0e67fa9b992f911e160a13da0"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7JCbn2qTw5V3CghrVe6kUTIbXYw.png": {
+    "mtime": 1780830839.9138,
+    "hash": "cfb51546028b2f68ca86d63ca90002f1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7JCbn2qTw5V3CghrVe6kUTIbXYw_1.png": {
+    "mtime": 1780830839.9839714,
+    "hash": "0e3d5527bb3ef7a2d10f13c88694a748"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7JCbn2qTw5V3CghrVe6kUTIbXYw_2.png": {
+    "mtime": 1780830840.003781,
+    "hash": "cc1a6323b6a38f06d6944846acb8fa48"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7JCbn2qTw5V3CghrVe6kUTIbXYw_3.png": {
+    "mtime": 1780830840.0540898,
+    "hash": "d20adee49abfc8865fb4949387b34b00"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7lqlNqxfvnKC15ukLtEVYM.jpg": {
+    "mtime": 1780830769.8642318,
+    "hash": "6b0dc24bc7b8fa4debc50c07ac3a4f70"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\7lqlNqxfvnKC15ukLtEVYM_1.jpg": {
+    "mtime": 1780830769.9617054,
+    "hash": "0d729beb9634789e03828931cd04959e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\84k4opEZkRUXxrhv1XFFNjK72yg.png": {
+    "mtime": 1780830840.5291774,
+    "hash": "5c16b7ebf2a86ff1e5b36b7ec2802dac"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\84k4opEZkRUXxrhv1XFFNjK72yg_1.png": {
+    "mtime": 1780830840.5794723,
+    "hash": "84a2038475ab9c95e960210f8a56965f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\84k4opEZkRUXxrhv1XFFNjK72yg_2.png": {
+    "mtime": 1780830840.6214323,
+    "hash": "6c488785d663dd0d20b84a2a76615d51"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\84k4opEZkRUXxrhv1XFFNjK72yg_3.png": {
+    "mtime": 1780830840.6703422,
+    "hash": "a26bbfe2fef15c41bda236ac3ed2d969"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\8CN7VbYL0aqjsEPfK8CcyJ3j3HM.png": {
+    "mtime": 1780830841.5320647,
+    "hash": "0ad0bb5b6e57d1f1cd2b263b2c7c0321"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\8CN7VbYL0aqjsEPfK8CcyJ3j3HM_1.png": {
+    "mtime": 1780830841.5946593,
+    "hash": "af224e789bc7a260b196e680ac157feb"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\8CN7VbYL0aqjsEPfK8CcyJ3j3HM_2.png": {
+    "mtime": 1780830841.641016,
+    "hash": "a9e1f7d519476311f1fe05786d8666b3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\8CN7VbYL0aqjsEPfK8CcyJ3j3HM_3.png": {
+    "mtime": 1780830841.7209349,
+    "hash": "27d050a2f00778ee4529ff4a745e6aac"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9861LVdeMj7ElCnkjOvsVzk57I.png": {
+    "mtime": 1780830842.2327127,
+    "hash": "033d5e4bfba99a39508de4186fb13716"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9861LVdeMj7ElCnkjOvsVzk57I_1.png": {
+    "mtime": 1780830842.2849758,
+    "hash": "371b9377280823f8500cb4fa6e70237a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9861LVdeMj7ElCnkjOvsVzk57I_2.png": {
+    "mtime": 1780830842.336553,
+    "hash": "0f624ec23e5cf0f61d85de2189c57c77"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9861LVdeMj7ElCnkjOvsVzk57I_3.png": {
+    "mtime": 1780830842.3773644,
+    "hash": "0f713e80e914402fcec48a99570d710b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9TBoVexUQIzb1cKaB6tUeF4Ohw.png": {
+    "mtime": 1780830840.7895508,
+    "hash": "ff8fe48c9f47dba19469626fe0da213e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9TBoVexUQIzb1cKaB6tUeF4Ohw_1.png": {
+    "mtime": 1780830840.8452075,
+    "hash": "63aa763e6b498919fbc89af268785d07"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9TBoVexUQIzb1cKaB6tUeF4Ohw_2.png": {
+    "mtime": 1780830840.8827832,
+    "hash": "407090cdf8ab0d2de96bfe9cad3bbcec"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9TBoVexUQIzb1cKaB6tUeF4Ohw_3.png": {
+    "mtime": 1780830840.915218,
+    "hash": "64a87e10e8a725f41ce479123759901c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9tqFdScX916TDL84lDE4Rl8NVI.png": {
+    "mtime": 1780830839.9476922,
+    "hash": "c7c1730b87d8abce04063a86a2d64fed"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9tqFdScX916TDL84lDE4Rl8NVI_1.png": {
+    "mtime": 1780830839.9980679,
+    "hash": "e5d2ee6ff0d09a83c923fd5228217b9d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9tqFdScX916TDL84lDE4Rl8NVI_2.png": {
+    "mtime": 1780830840.0307088,
+    "hash": "c8bafb656e3274db5aac663de208651a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\9tqFdScX916TDL84lDE4Rl8NVI_3.png": {
+    "mtime": 1780830840.0882492,
+    "hash": "d466c8b83cf56a066c7f15276444e568"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\AVsssNQRylEZc5orEWvz8Q1wQT4.gif": {
+    "mtime": 1780830706.4765768,
+    "hash": "9c5a3d9d99594ca29e901bf84bce475e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\BJhI7JyNZs1Qw7RXOlWTMKMyY.png": {
+    "mtime": 1780830841.0305636,
+    "hash": "1eb0a3619009509fcd8649c7e0a4f501"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\BJhI7JyNZs1Qw7RXOlWTMKMyY_1.png": {
+    "mtime": 1780830841.142598,
+    "hash": "93df597d90ce2c2205f307a975e08bc8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\BJhI7JyNZs1Qw7RXOlWTMKMyY_2.png": {
+    "mtime": 1780830841.1695664,
+    "hash": "8ba1c14f09612a526aa9f50ee46b12a6"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\BJhI7JyNZs1Qw7RXOlWTMKMyY_3.png": {
+    "mtime": 1780830841.2128704,
+    "hash": "d57ddd9f1a595fb1fd0be3dafbebe81a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Bqh9Z8DfK63975t8zsitOnwJU.png": {
+    "mtime": 1780830841.8025622,
+    "hash": "9791d673bd89b0b2e134afa8da984b06"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Bqh9Z8DfK63975t8zsitOnwJU_1.png": {
+    "mtime": 1780830841.841911,
+    "hash": "927ccc88721309e249bf7c416cdd6b8b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Bqh9Z8DfK63975t8zsitOnwJU_2.png": {
+    "mtime": 1780830841.87762,
+    "hash": "9adbb7f3fe34ff2d8ba7e23c477b00a6"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Bqh9Z8DfK63975t8zsitOnwJU_3.png": {
+    "mtime": 1780830841.9339056,
+    "hash": "e82929bf359ebfd888f3c5e450d2bb5d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\cwez5Dr1W6gFD7cVEL790EZ41cs.png": {
+    "mtime": 1780830840.7776465,
+    "hash": "98142e8edc2ac4edc35a5f86cb8b9294"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\cwez5Dr1W6gFD7cVEL790EZ41cs_1.png": {
+    "mtime": 1780830840.8419137,
+    "hash": "0f5601398df9d8357b54e8e9af37976e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\cwez5Dr1W6gFD7cVEL790EZ41cs_2.png": {
+    "mtime": 1780830840.8763075,
+    "hash": "3f66a49a3f7eecd69dd5a5bdcfeb00bc"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\cwez5Dr1W6gFD7cVEL790EZ41cs_3.png": {
+    "mtime": 1780830840.9384751,
+    "hash": "f7542b495ac15166e879d78b25a94af4"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DCKH81VpAp9yoM0ZmAnHeFuQog.png": {
+    "mtime": 1780830839.9613504,
+    "hash": "72ee934f348c90a5ab36b39d87d4f00a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DCKH81VpAp9yoM0ZmAnHeFuQog_1.png": {
+    "mtime": 1780830839.981701,
+    "hash": "fc289e3119987a2f87951ad6c44ac055"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DCKH81VpAp9yoM0ZmAnHeFuQog_2.png": {
+    "mtime": 1780830839.9880278,
+    "hash": "ce1a0ddcfba5774b157ba39645949a1b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DCKH81VpAp9yoM0ZmAnHeFuQog_3.png": {
+    "mtime": 1780830840.0420604,
+    "hash": "50a930fed0d12460a934356af7d8587d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\diz2CY6OIoyryHqlLitphI3FQA.png": {
+    "mtime": 1780830840.8156562,
+    "hash": "4cef2bf98a9d7d74a789b92057ededcb"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\diz2CY6OIoyryHqlLitphI3FQA_1.png": {
+    "mtime": 1780830840.8514614,
+    "hash": "c739e572320773b9eb4e82b89b797abc"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\diz2CY6OIoyryHqlLitphI3FQA_2.png": {
+    "mtime": 1780830840.9057539,
+    "hash": "31e0815b3647bf96f7b44de780e161b9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\diz2CY6OIoyryHqlLitphI3FQA_3.png": {
+    "mtime": 1780830840.9818604,
+    "hash": "5d109d8496c8695eb80e8724a2f66ea7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DOJU8jtONuwYaeJYL5J8XK9J4.png": {
+    "mtime": 1780830841.9971435,
+    "hash": "e8a9f9de7c19c949dde9221c32b5f32b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DOJU8jtONuwYaeJYL5J8XK9J4_1.png": {
+    "mtime": 1780830842.0310578,
+    "hash": "2f0c73685407903ec0e48734fc92198f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DOJU8jtONuwYaeJYL5J8XK9J4_2.png": {
+    "mtime": 1780830842.0919533,
+    "hash": "35529e7fe9a42733f5254065cf28afa8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DOJU8jtONuwYaeJYL5J8XK9J4_3.png": {
+    "mtime": 1780830842.1464944,
+    "hash": "b49fbbc71744d9ad6bf7645a9b42edd9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DR7P69J7TLLyqFw9vmURsDT78.png": {
+    "mtime": 1780830841.3126233,
+    "hash": "0998df7d63b8e8493054649ac5fdcbf1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DR7P69J7TLLyqFw9vmURsDT78_1.png": {
+    "mtime": 1780830841.375795,
+    "hash": "7d02f4f81e8361dc8155598c92563caf"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DR7P69J7TLLyqFw9vmURsDT78_2.png": {
+    "mtime": 1780830841.4166992,
+    "hash": "0375bc20d83ee931b2786308224ac8da"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DR7P69J7TLLyqFw9vmURsDT78_3.png": {
+    "mtime": 1780830841.4820843,
+    "hash": "848400c2a7e106e8c7d5fb34b11fac0d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\dRWTyHsAUUlpgDKbN9xLILvx7kU.jpg": {
+    "mtime": 1780830706.4836502,
+    "hash": "95f19b3fcdf0e8d2daaa81b4be6a2133"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\dRWTyHsAUUlpgDKbN9xLILvx7kU_1.jpg": {
+    "mtime": 1780830706.5111382,
+    "hash": "134418444addb13f8435eacd923c52c4"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DyI1FYlzphFPySiWlLbtWEHZzQ.png": {
+    "mtime": 1780830841.11586,
+    "hash": "572600415f3e0daa16bcace496a70f9c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DyI1FYlzphFPySiWlLbtWEHZzQ_1.png": {
+    "mtime": 1780830841.1325824,
+    "hash": "fa8450868e0e9c1b4d9f26e695c8a564"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DyI1FYlzphFPySiWlLbtWEHZzQ_2.png": {
+    "mtime": 1780830841.176152,
+    "hash": "96fe8b5e711ad01ef0efe555556aacae"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\DyI1FYlzphFPySiWlLbtWEHZzQ_3.png": {
+    "mtime": 1780830841.2409742,
+    "hash": "51c9aa2382ff78b337b317ef770cdb9e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ebetiWQPcHPDtKIGda53B8Y1vg0.jpg": {
+    "mtime": 1780830706.4968865,
+    "hash": "b49ffa62bf4694cb4e922bbd30fafde9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ebetiWQPcHPDtKIGda53B8Y1vg0_1.jpg": {
+    "mtime": 1780830706.5101354,
+    "hash": "a66383d46136e021036ff3c97b0096ba"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ecpwRfLZWRwSEb63HL2XzceNuqw.png": {
+    "mtime": 1780830799.471955,
+    "hash": "7bba134f8f19d47e757052bd18888541"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\eiTGcOUfyFZH1zbgUBIlYkh6w.png": {
+    "mtime": 1780830769.949802,
+    "hash": "079fc0697cf8a0dd5252e83f08b24155"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\eiTGcOUfyFZH1zbgUBIlYkh6w_1.png": {
+    "mtime": 1780830769.9845986,
+    "hash": "9aa3f38fcb70c9ee9ff394a3c6d135ff"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\eiTGcOUfyFZH1zbgUBIlYkh6w_2.png": {
+    "mtime": 1780830770.0049777,
+    "hash": "fa9c4568e7a2fdad144c0fb0ec4523cb"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\eiTGcOUfyFZH1zbgUBIlYkh6w_3.png": {
+    "mtime": 1780830770.030574,
+    "hash": "cc0578e88f799f467b0a3e1696aaa4da"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\emipoV0SNkScgemtIAXYJR7qxLI.png": {
+    "mtime": 1780830769.898483,
+    "hash": "c312dd233105e40f26d28d063fd47d50"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\emipoV0SNkScgemtIAXYJR7qxLI_1.png": {
+    "mtime": 1780830769.995026,
+    "hash": "64edc83c0cb4f92b5ecc123e24342cb7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\emipoV0SNkScgemtIAXYJR7qxLI_2.png": {
+    "mtime": 1780830770.018027,
+    "hash": "c176fb1682fde24560968d8c80d60df3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\emipoV0SNkScgemtIAXYJR7qxLI_3.png": {
+    "mtime": 1780830770.0575554,
+    "hash": "3fda086703eca121cf7b981bed8cc409"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\F2dvoEzvQvL279KfT74v6JQ0e6o.png": {
+    "mtime": 1780830799.4706342,
+    "hash": "7ff039ee599c54c09ebd9159483c4169"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\F5LqDh0hZit06QP8BpExx3Y1hYg.png": {
+    "mtime": 1780830799.7326725,
+    "hash": "105aec663230e7aba0bc79a50a487d58"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\F5LqDh0hZit06QP8BpExx3Y1hYg_1.png": {
+    "mtime": 1780830799.7673204,
+    "hash": "f1a19a1c13f877c25ffbd8f2d6e5d402"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\F5LqDh0hZit06QP8BpExx3Y1hYg_2.png": {
+    "mtime": 1780830799.7989993,
+    "hash": "6dc5b43d45c9ad48821fc7b2ee9f454a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\F5LqDh0hZit06QP8BpExx3Y1hYg_3.png": {
+    "mtime": 1780830799.8692322,
+    "hash": "6dbc0742401a226f317fd7102e9e4909"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\fh6ni1R39XN0XVNN4BBzDqUvU.png": {
+    "mtime": 1780830799.4742403,
+    "hash": "1a4795d20c1a94160ac32e030858a194"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\fknSYE9ItXJOphRyQztsXpKu2Y.jpg": {
+    "mtime": 1780830706.4801662,
+    "hash": "488d0ff13bbf2ff13f14de277f02b667"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\fknSYE9ItXJOphRyQztsXpKu2Y_1.jpg": {
+    "mtime": 1780830706.5000854,
+    "hash": "42ae8e3eb510eaca1a96d386cb2acc7e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\FrZiRGFrEU0FAA8BtmhDbIt2wU.png": {
+    "mtime": 1780830840.274138,
+    "hash": "e0d5d1f5aeab409ad06ea22c9158dc50"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\FrZiRGFrEU0FAA8BtmhDbIt2wU_1.png": {
+    "mtime": 1780830840.2966135,
+    "hash": "7dbf03f3e38de9c607497fd3faa9194d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\FrZiRGFrEU0FAA8BtmhDbIt2wU_2.png": {
+    "mtime": 1780830840.3444755,
+    "hash": "ef6756eb854e1032a717e3819e6bf6ec"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\FrZiRGFrEU0FAA8BtmhDbIt2wU_3.png": {
+    "mtime": 1780830840.4350195,
+    "hash": "e823f85644f3cc3c000e1b119c60ce0a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\GHA91BMep8r3bCRGQsv0uKpxsA.png": {
+    "mtime": 1780830769.9291968,
+    "hash": "a91a719bb7b7e27aaf4edb3af12b476b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\GHA91BMep8r3bCRGQsv0uKpxsA_1.png": {
+    "mtime": 1780830769.982599,
+    "hash": "2b9c0c2862ea258241a478a8d0b61cf1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\GHA91BMep8r3bCRGQsv0uKpxsA_2.png": {
+    "mtime": 1780830769.9888928,
+    "hash": "e0dd47a68dc4f47cefe3a607f6de944a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\GHA91BMep8r3bCRGQsv0uKpxsA_3.png": {
+    "mtime": 1780830770.0134292,
+    "hash": "5744d4c4f47d934f1cf1f560c8ebb2a2"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\GspYNIgS18FLAOKeAmvpDd6KO4.png": {
+    "mtime": 1780830706.5230649,
+    "hash": "618041dce90393b714b236cdf039d230"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\hRWIWThZAAZnPfijHNeSaehZQ.jpg": {
+    "mtime": 1780830769.8597367,
+    "hash": "ab359fcf9120ce760854fab566de920b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\hRWIWThZAAZnPfijHNeSaehZQ_1.jpg": {
+    "mtime": 1780830769.9567084,
+    "hash": "f72ab3628e332330a23d169f1c49faf1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\hwBO7w2ZRXMvxFcsRffOdjdE.png": {
+    "mtime": 1780830840.5513124,
+    "hash": "8f6d0e746446e8f3bc9557f4f68b686c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\hwBO7w2ZRXMvxFcsRffOdjdE_1.png": {
+    "mtime": 1780830840.6015077,
+    "hash": "5baa3bd168b186132d35496798a42d50"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\hwBO7w2ZRXMvxFcsRffOdjdE_2.png": {
+    "mtime": 1780830840.6427736,
+    "hash": "c32ca51600d8565a8a37d2e6455a7001"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\hwBO7w2ZRXMvxFcsRffOdjdE_3.png": {
+    "mtime": 1780830840.7317834,
+    "hash": "71f306d606096a155365d8355eda8833"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\iQwuEVadqLZLDnwjblKI9Kro8Ss.png": {
+    "mtime": 1780830799.5946474,
+    "hash": "db39493f26c213c6b9827d415f575dc9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\iQwuEVadqLZLDnwjblKI9Kro8Ss_1.png": {
+    "mtime": 1780830799.7576892,
+    "hash": "dbd1704c442a83532f6b99082289c778"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\iQwuEVadqLZLDnwjblKI9Kro8Ss_2.png": {
+    "mtime": 1780830799.7815375,
+    "hash": "3a8c6167fc147c143986786039ed70cc"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\iQwuEVadqLZLDnwjblKI9Kro8Ss_3.png": {
+    "mtime": 1780830799.9727361,
+    "hash": "a4dd1ca6ad4407519fef3dc61cf45c21"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\k6ZrTq3gELjvgT07LsIHjYqPc.png": {
+    "mtime": 1780830839.9773812,
+    "hash": "000b43bcaa292c28fe8dd091120e0b90"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\k6ZrTq3gELjvgT07LsIHjYqPc_1.png": {
+    "mtime": 1780830840.0068638,
+    "hash": "e548630182b5ee1844eb152fb9203325"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\k6ZrTq3gELjvgT07LsIHjYqPc_2.png": {
+    "mtime": 1780830840.0666418,
+    "hash": "b9b0464f2bf3b332ac5916d5a65fec8e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\k6ZrTq3gELjvgT07LsIHjYqPc_3.png": {
+    "mtime": 1780830840.1257744,
+    "hash": "0694e001e788d76b235d303627cedff7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\KLLOfuFA1ZF5EfevMBIu9jqOZYU.png": {
+    "mtime": 1780830839.9295633,
+    "hash": "a0b7ffd8805bb119ee5a633e6f583a71"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\KLLOfuFA1ZF5EfevMBIu9jqOZYU_1.png": {
+    "mtime": 1780830839.9930687,
+    "hash": "e6626bcfb744951bf88e71f4c2371dea"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\KLLOfuFA1ZF5EfevMBIu9jqOZYU_2.png": {
+    "mtime": 1780830840.0180933,
+    "hash": "6dd0a946b486d522a312d122efced413"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\KLLOfuFA1ZF5EfevMBIu9jqOZYU_3.png": {
+    "mtime": 1780830840.1073315,
+    "hash": "a9a9b54ccaef2684b66e17e9a24961c4"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\kU5ZWbecnNx01t1ExttaHFePBUw.png": {
+    "mtime": 1780830841.3414528,
+    "hash": "910535020e896853a106200181faf4b2"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\kU5ZWbecnNx01t1ExttaHFePBUw_1.png": {
+    "mtime": 1780830841.3695583,
+    "hash": "fff76e71aa3ba02638a042b05e9869b3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\kU5ZWbecnNx01t1ExttaHFePBUw_2.png": {
+    "mtime": 1780830841.3931718,
+    "hash": "052c540ca1a868365d9f48f3ce1f9141"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\kU5ZWbecnNx01t1ExttaHFePBUw_3.png": {
+    "mtime": 1780830841.4755468,
+    "hash": "3175d70c303381ac90095a320c0a6644"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\lwzpnzdk6KYdLO6WwJnKqEu8U.png": {
+    "mtime": 1780830842.2172475,
+    "hash": "adb0a34cbe869847ef554b06e014f2c8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\lwzpnzdk6KYdLO6WwJnKqEu8U_1.png": {
+    "mtime": 1780830842.2684848,
+    "hash": "4dcc48816e273bec91eefcbdc2d1b118"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\lwzpnzdk6KYdLO6WwJnKqEu8U_2.png": {
+    "mtime": 1780830842.3133407,
+    "hash": "f2bb27ed233b624a3131f4ad7c0da8e8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\lwzpnzdk6KYdLO6WwJnKqEu8U_3.png": {
+    "mtime": 1780830842.3478212,
+    "hash": "5cbabbe2b6ad219867247584ec78d884"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\lXgguYbCRJAn4aEkbILsFFCfM.jpg": {
+    "mtime": 1780830799.981771,
+    "hash": "441ca263e7f3a838bdea996a07639e48"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\lXgguYbCRJAn4aEkbILsFFCfM_1.jpg": {
+    "mtime": 1780830800.01284,
+    "hash": "a33eade7a6b6d9b768552f76268eea14"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\mIm9lrb8l1W8blmrYlGXhMAdo.png": {
+    "mtime": 1780830706.4866488,
+    "hash": "c93ed43826f2c5bfeb68e960e577f86c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\mIm9lrb8l1W8blmrYlGXhMAdo_1.png": {
+    "mtime": 1780830706.5161047,
+    "hash": "22a46ee8297513c12740561db5a5a52d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\MmHnHauxmrenpE3jhIOO4FB9hWw.png": {
+    "mtime": 1780830841.7805197,
+    "hash": "a762d85b2cea81de1c2ca0c366d06cfd"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\MmHnHauxmrenpE3jhIOO4FB9hWw_1.png": {
+    "mtime": 1780830841.8539515,
+    "hash": "7b92c924fda54d91c1b33062d0602b55"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\MmHnHauxmrenpE3jhIOO4FB9hWw_2.png": {
+    "mtime": 1780830841.9089704,
+    "hash": "eecba9dd5e07ffa5f032bf60c6987049"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\MmHnHauxmrenpE3jhIOO4FB9hWw_3.png": {
+    "mtime": 1780830841.9433296,
+    "hash": "50100103ceaaf91c49730cbdbbd185ca"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nDHCjPrlqtG6mOmj2oiCsjD8Y.png": {
+    "mtime": 1780830841.5807586,
+    "hash": "45485ddc7bf03a06bc130451358a4190"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nDHCjPrlqtG6mOmj2oiCsjD8Y_1.png": {
+    "mtime": 1780830841.6204002,
+    "hash": "557e48a5f98fd122a07595e050137fd7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nDHCjPrlqtG6mOmj2oiCsjD8Y_2.png": {
+    "mtime": 1780830841.657118,
+    "hash": "0a86be6b66675bcb36c6b1071663a1d8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nDHCjPrlqtG6mOmj2oiCsjD8Y_3.png": {
+    "mtime": 1780830841.7327113,
+    "hash": "c003a8f268a99f6367783fd773a1861f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Nf63tXddU52SRtJJgRHqk7zzD2g.png": {
+    "mtime": 1780830799.5117204,
+    "hash": "95088ba19cd0ff9831a6cdc5017eeecf"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nnIefg3FpaPL0Cq6notcSqvRpU.png": {
+    "mtime": 1780830841.359894,
+    "hash": "a186288273948204f88cbda71075cfc2"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nnIefg3FpaPL0Cq6notcSqvRpU_1.png": {
+    "mtime": 1780830841.3985214,
+    "hash": "c10ea7a885eafe006d5b11cf18edc6a3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nnIefg3FpaPL0Cq6notcSqvRpU_2.png": {
+    "mtime": 1780830841.4423478,
+    "hash": "3e5667ea89cac76245162574cbc61be9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\nnIefg3FpaPL0Cq6notcSqvRpU_3.png": {
+    "mtime": 1780830841.4994063,
+    "hash": "e5f7a588aaf4dcb2bdee1fb0bf492ec3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oFEHRfUjlxL61HaDFkrYEau1ekM.png": {
+    "mtime": 1780830840.838468,
+    "hash": "b05c2e8a66c46f72b40da66f0ca31c86"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oFEHRfUjlxL61HaDFkrYEau1ekM_1.png": {
+    "mtime": 1780830840.8664067,
+    "hash": "79d6711bf5699ca7160ae0f8d23cf364"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oFEHRfUjlxL61HaDFkrYEau1ekM_2.png": {
+    "mtime": 1780830840.8989599,
+    "hash": "76dd434ecc4906989dfcc9538ddf98b9"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oFEHRfUjlxL61HaDFkrYEau1ekM_3.png": {
+    "mtime": 1780830841.0046637,
+    "hash": "7c233eb42ef8529d56fc0f6984dd4eb6"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oRsdrqp2gE6sSLBWIb9RzABkPVg.png": {
+    "mtime": 1780830840.5092795,
+    "hash": "990491be70e638812128cb4f257f8dd3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oRsdrqp2gE6sSLBWIb9RzABkPVg_1.png": {
+    "mtime": 1780830840.5892305,
+    "hash": "aef9da0707c2ce982dc4f6bc84ecded4"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oRsdrqp2gE6sSLBWIb9RzABkPVg_2.png": {
+    "mtime": 1780830840.627221,
+    "hash": "3ac89169b5c184c2e773c4eb1f194249"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oRsdrqp2gE6sSLBWIb9RzABkPVg_3.png": {
+    "mtime": 1780830840.682974,
+    "hash": "1b7b6d875e502770e8bc005eceffacf3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oXauFVvJf896fsiMgfgkKL1MGTY.jpg": {
+    "mtime": 1780830799.520986,
+    "hash": "e881539998e22aa147d6b0de036c88bb"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\oXauFVvJf896fsiMgfgkKL1MGTY_1.jpg": {
+    "mtime": 1780830799.741475,
+    "hash": "a4476013e0808503b6ec891563e0e489"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\PB512xTM73Hddxpr5rTIuDq3QZA.png": {
+    "mtime": 1780830841.0586584,
+    "hash": "70d25cccab7138295ef391568e150234"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\PB512xTM73Hddxpr5rTIuDq3QZA_1.png": {
+    "mtime": 1780830841.1369963,
+    "hash": "b5606d5418fe10af76c5d4e1048891b6"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\PB512xTM73Hddxpr5rTIuDq3QZA_2.png": {
+    "mtime": 1780830841.1604488,
+    "hash": "8b6dbb82eb0c13279fe3f9ac6c79d47e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\PB512xTM73Hddxpr5rTIuDq3QZA_3.png": {
+    "mtime": 1780830841.2285852,
+    "hash": "87e59539c846abed43c883cf2caccc72"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\pBhgPAk7YzQ97Z6M8nduUWXKRHs.jpg": {
+    "mtime": 1780830799.4879155,
+    "hash": "3caf75bb203b8e2e4c3717fda31db143"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\pBhgPAk7YzQ97Z6M8nduUWXKRHs_1.jpg": {
+    "mtime": 1780830799.7374713,
+    "hash": "f5a42af82d8f49622aafedafa7b90456"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\pyTK9uZz2WcL1E0qfpwtSCxjWp4.png": {
+    "mtime": 1780830842.017169,
+    "hash": "bd3254e018f845cb0ab3cb8293b2cca8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\pyTK9uZz2WcL1E0qfpwtSCxjWp4_1.png": {
+    "mtime": 1780830842.0512283,
+    "hash": "5b6dff488e528edf81133c56f8fa6da1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\pyTK9uZz2WcL1E0qfpwtSCxjWp4_2.png": {
+    "mtime": 1780830842.0972028,
+    "hash": "e45a4a5ca6737fe15baf10daee34d871"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\pyTK9uZz2WcL1E0qfpwtSCxjWp4_3.png": {
+    "mtime": 1780830842.154909,
+    "hash": "e91ac61a3c0d932c54bbfab351fabddb"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\q9AdWuWEqlhynqXEwqbzJmhyqPI.png": {
+    "mtime": 1780830799.4783623,
+    "hash": "c3946954c2b5bfcd9698c6dfe68f1c38"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\QiqF0NlqfCdjRXmu2YGYs2xytkE.png": {
+    "mtime": 1780830841.9692402,
+    "hash": "66168bf3e5204fd65a0871625b143f02"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\QiqF0NlqfCdjRXmu2YGYs2xytkE_1.png": {
+    "mtime": 1780830842.0592532,
+    "hash": "365ba321b84c9ddbe7157938b5bb2c81"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\QiqF0NlqfCdjRXmu2YGYs2xytkE_2.png": {
+    "mtime": 1780830842.0863464,
+    "hash": "cd6baac69f87826c0377523f922e0c71"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\QiqF0NlqfCdjRXmu2YGYs2xytkE_3.png": {
+    "mtime": 1780830842.1346836,
+    "hash": "ba7e418862f5a9001abf5d920bfc2a2a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\qitPxQFqy311AzXhe7lWCossnDs.png": {
+    "mtime": 1780830841.2822535,
+    "hash": "8ed7e3bc7ce05093ef35282c97b57a42"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\qitPxQFqy311AzXhe7lWCossnDs_1.png": {
+    "mtime": 1780830841.379049,
+    "hash": "6dba02f032828f17e73f4a2c0eef94ad"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\qitPxQFqy311AzXhe7lWCossnDs_2.png": {
+    "mtime": 1780830841.4104395,
+    "hash": "d88efe895352b3b015261a374b8fbcc5"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\qitPxQFqy311AzXhe7lWCossnDs_3.png": {
+    "mtime": 1780830841.4574027,
+    "hash": "d34fafb7232326a05847409bb98012e1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\rkr0UstBCYveBjmbxNJdxFvnus.jpg": {
+    "mtime": 1780830706.4948845,
+    "hash": "5134aacb368c1f2b386f4b6a2f1b708e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\rkr0UstBCYveBjmbxNJdxFvnus_1.jpg": {
+    "mtime": 1780830706.498086,
+    "hash": "ea8f9540bbbb14d13b55b5a246f6d77d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\STWjlxPSvoUqWraQO3v8i9M8.png": {
+    "mtime": 1780830841.9842405,
+    "hash": "a904fa5b35c806accdd0e1a7c3c1bab3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\STWjlxPSvoUqWraQO3v8i9M8_1.png": {
+    "mtime": 1780830842.0265193,
+    "hash": "0f19995ab230c6f28d5406aef3e7d2bd"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\STWjlxPSvoUqWraQO3v8i9M8_2.png": {
+    "mtime": 1780830842.0784056,
+    "hash": "0fe8bd524a7e27d712b745e9738457d8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\STWjlxPSvoUqWraQO3v8i9M8_3.png": {
+    "mtime": 1780830842.1183167,
+    "hash": "ab2248ea73c98e453910e158319c9015"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\szipGeXJrqaqSOhvG3OKm6tPs.jpg": {
+    "mtime": 1780830769.866774,
+    "hash": "88d99cbd5844cd3414f2e218525bff03"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\szipGeXJrqaqSOhvG3OKm6tPs_1.jpg": {
+    "mtime": 1780830769.978597,
+    "hash": "849ebd1c37756d679e9c680684b90f6b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tp7x5VoKKEmYx7s57KofuIMJddE.png": {
+    "mtime": 1780830841.5646336,
+    "hash": "93db1d2053ea95d9f3fef6f28f49c86f"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tp7x5VoKKEmYx7s57KofuIMJddE_1.png": {
+    "mtime": 1780830841.60821,
+    "hash": "486e9a8dcde2f97832b8086c83bb847d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tp7x5VoKKEmYx7s57KofuIMJddE_2.png": {
+    "mtime": 1780830841.647601,
+    "hash": "b1cd2ba2adb2edeb3cec77d277240ed4"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tp7x5VoKKEmYx7s57KofuIMJddE_3.png": {
+    "mtime": 1780830841.7440355,
+    "hash": "15cf56893d3c5329df2a7caef3ab4232"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\TrVnIH70a4BD3sPK6ScVnym0A.png": {
+    "mtime": 1780830841.8287325,
+    "hash": "b56061c343af1aace702e1585ba75894"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\TrVnIH70a4BD3sPK6ScVnym0A_1.png": {
+    "mtime": 1780830841.8474226,
+    "hash": "55d4bc8e1759162d545ea1653bb756f5"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\TrVnIH70a4BD3sPK6ScVnym0A_2.png": {
+    "mtime": 1780830841.881605,
+    "hash": "582b0ba358102add09a825129cf4d8c6"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\TrVnIH70a4BD3sPK6ScVnym0A_3.png": {
+    "mtime": 1780830841.9178174,
+    "hash": "94011c651ec0922a9e3f6681ba0fc7b3"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tto2BzRT2WZyJl80XYB2W5oH1Q.png": {
+    "mtime": 1780830840.7543936,
+    "hash": "9770109c07b698172c6f477ac15477a5"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tto2BzRT2WZyJl80XYB2W5oH1Q_1.png": {
+    "mtime": 1780830840.860404,
+    "hash": "919ada27fe0b36de733c7290d25d97e7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tto2BzRT2WZyJl80XYB2W5oH1Q_2.png": {
+    "mtime": 1780830840.891256,
+    "hash": "5bbca9210a0f6a212039fb0a2141999d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tto2BzRT2WZyJl80XYB2W5oH1Q_3.png": {
+    "mtime": 1780830840.9630628,
+    "hash": "c8cad1f1f33f6f80b3f91a7f25eeb952"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tvqGTWAzICR8R2aDEJVFu2RYhYM.png": {
+    "mtime": 1780830841.5460649,
+    "hash": "e3ee8f87f95a83daacc3091f666edac1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tvqGTWAzICR8R2aDEJVFu2RYhYM_1.png": {
+    "mtime": 1780830841.5862737,
+    "hash": "0aff55b1c2802e8d01165f2ba330630a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tvqGTWAzICR8R2aDEJVFu2RYhYM_2.png": {
+    "mtime": 1780830841.6265075,
+    "hash": "6debe8ff2fd3ddb003929c7090dcea0b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tvqGTWAzICR8R2aDEJVFu2RYhYM_3.png": {
+    "mtime": 1780830841.6744826,
+    "hash": "8ac175722500b6d077138a6ebcd190a5"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tZsUTzJDASlMX3KgH1WIKykXNXs.png": {
+    "mtime": 1780830840.201123,
+    "hash": "4353e46aa89704a2ad78d1eda08c22cf"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tZsUTzJDASlMX3KgH1WIKykXNXs_1.png": {
+    "mtime": 1780830840.2881367,
+    "hash": "b984ee19148b07f141d28c1168b14a0b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tZsUTzJDASlMX3KgH1WIKykXNXs_2.png": {
+    "mtime": 1780830840.3385472,
+    "hash": "9db20b341b6046cf5374646700c4d274"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\tZsUTzJDASlMX3KgH1WIKykXNXs_3.png": {
+    "mtime": 1780830840.4189746,
+    "hash": "254d7cb8d46454759e16fc636cf95985"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\U5Haa38nxhYZh3zzmMpdbLkmY.jpg": {
+    "mtime": 1780830799.5032337,
+    "hash": "aeab929023ed7066c2f7ead8e3ee3148"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Uadw1C4ItF4L1XkBm6q5epDw.png": {
+    "mtime": 1780830769.8562033,
+    "hash": "3fdf1f5b14b879828b2c75c93849ab58"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Uadw1C4ItF4L1XkBm6q5epDw_1.png": {
+    "mtime": 1780830769.949802,
+    "hash": "2ddb1df3f2ebad8ee879cab323ba96b7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\Uadw1C4ItF4L1XkBm6q5epDw_2.png": {
+    "mtime": 1780830769.9531915,
+    "hash": "bda468ee23e14153c8f8727675ba6e70"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VdbXEmOzvEcE0eGnlJxelwMnw.png": {
+    "mtime": 1780830841.2590048,
+    "hash": "17e613de4692a63a0f4f56ae1257da16"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VdbXEmOzvEcE0eGnlJxelwMnw_1.png": {
+    "mtime": 1780830841.3629868,
+    "hash": "b3d51947513b1251918f8ae8934f9b17"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VdbXEmOzvEcE0eGnlJxelwMnw_2.png": {
+    "mtime": 1780830841.3860579,
+    "hash": "03a1ab05e0c5ed0a9e248836ce2e2fb1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VdbXEmOzvEcE0eGnlJxelwMnw_3.png": {
+    "mtime": 1780830841.4371724,
+    "hash": "95adada10025689360dd79dce156493a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VfnmpAek3Zca6EGKmJjWRMRKbo.jpg": {
+    "mtime": 1780830706.4811656,
+    "hash": "cd072464fba9d0a0e191a4d659b36045"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VfnmpAek3Zca6EGKmJjWRMRKbo_1.jpg": {
+    "mtime": 1780830706.5050573,
+    "hash": "d612ae9a77f302acba5b44495fd91624"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VfnmpAek3Zca6EGKmJjWRMRKbo_2.jpg": {
+    "mtime": 1780830706.507865,
+    "hash": "cd072464fba9d0a0e191a4d659b36045"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VgZ9iRLTYIdclUuhtEQZniHLQmk.png": {
+    "mtime": 1780830842.1776402,
+    "hash": "8a4296d63572a2addc565dae9099954c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VgZ9iRLTYIdclUuhtEQZniHLQmk_1.png": {
+    "mtime": 1780830842.2502148,
+    "hash": "1f37fe70738e4c08bfb9bd8f6fd17015"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VgZ9iRLTYIdclUuhtEQZniHLQmk_2.png": {
+    "mtime": 1780830842.279441,
+    "hash": "c6167aa231ff62477eee59c34c20936e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VgZ9iRLTYIdclUuhtEQZniHLQmk_3.png": {
+    "mtime": 1780830842.32721,
+    "hash": "8cd497648c892bedf3161ca3741409ab"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlvscqClZoExgoFKLHA9o2ZWPU.png": {
+    "mtime": 1780830840.156275,
+    "hash": "cde40eb3722ebac33a0669be8bb0a146"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlvscqClZoExgoFKLHA9o2ZWPU_1.png": {
+    "mtime": 1780830840.279247,
+    "hash": "ebe31713432613b0577df0db9d278d63"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlvscqClZoExgoFKLHA9o2ZWPU_2.png": {
+    "mtime": 1780830840.3172581,
+    "hash": "aeefabef5052818fc3a4af561b6a339c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlvscqClZoExgoFKLHA9o2ZWPU_3.png": {
+    "mtime": 1780830840.3677008,
+    "hash": "0a1d1b214f4838d90666045f4017f557"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlwdXALWNjFie7vYJhu1t8LI.png": {
+    "mtime": 1780830840.5743637,
+    "hash": "84602169afca36f0fb54a3b7569abe33"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlwdXALWNjFie7vYJhu1t8LI_1.png": {
+    "mtime": 1780830840.6120243,
+    "hash": "563562d15d6e20691aa11b414a6bb971"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlwdXALWNjFie7vYJhu1t8LI_2.png": {
+    "mtime": 1780830840.6543465,
+    "hash": "7d3a649bc7c588fb24aa3e0f4713d417"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VlwdXALWNjFie7vYJhu1t8LI_3.png": {
+    "mtime": 1780830840.7175357,
+    "hash": "cde4580b2679aedb13cc4133c7b1ced0"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VV87qXsMsQFDRZ9w36sMmjFU.png": {
+    "mtime": 1780830841.0982652,
+    "hash": "cb35f738ce5c2fdc442893ab4feec74a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VV87qXsMsQFDRZ9w36sMmjFU_1.png": {
+    "mtime": 1780830841.12148,
+    "hash": "0e45f43881a62faf72ca5f2223558043"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VV87qXsMsQFDRZ9w36sMmjFU_2.png": {
+    "mtime": 1780830841.1480527,
+    "hash": "f283529b2b123a460a2ffa09ef479e80"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\VV87qXsMsQFDRZ9w36sMmjFU_3.png": {
+    "mtime": 1780830841.196894,
+    "hash": "197c808ed9cba04e3830db16d3b35929"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\w62D2elwRl3kxN0uECK3T9rjOXY.png": {
+    "mtime": 1780830799.6629426,
+    "hash": "ea6cd73e7a5c8ebd85f00e85c072cc37"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\w62D2elwRl3kxN0uECK3T9rjOXY_1.png": {
+    "mtime": 1780830799.7470584,
+    "hash": "10b4d5d89f60ae800de6b91b201c09b2"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\w62D2elwRl3kxN0uECK3T9rjOXY_2.png": {
+    "mtime": 1780830799.8147247,
+    "hash": "7c7b17f70f5fe42a928673b12ef84108"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\w62D2elwRl3kxN0uECK3T9rjOXY_3.png": {
+    "mtime": 1780830799.9394684,
+    "hash": "560637ded8358cd70f991c21f9222226"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\wbdUHLZPIW6e12ihD9TwlbLnY.jpg": {
+    "mtime": 1780830706.4887002,
+    "hash": "1d994e68c7036cab3e6b38bfe3a0a106"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\wbdUHLZPIW6e12ihD9TwlbLnY_1.jpg": {
+    "mtime": 1780830706.5135841,
+    "hash": "5a5838a174638fec86718489b9add2b2"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WmJj3jNjfAVXCXBm8rXnfVKmRks.png": {
+    "mtime": 1780830769.918319,
+    "hash": "86585e85699b4ab3a1870220e4a071a0"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WmJj3jNjfAVXCXBm8rXnfVKmRks_1.png": {
+    "mtime": 1780830769.991503,
+    "hash": "e5868066119f2d259bd1eeacd9856878"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WmJj3jNjfAVXCXBm8rXnfVKmRks_2.png": {
+    "mtime": 1780830769.9990015,
+    "hash": "c48f86fbdc89ccd92e6f56fe648adcc6"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WmJj3jNjfAVXCXBm8rXnfVKmRks_3.png": {
+    "mtime": 1780830770.038668,
+    "hash": "1c003fe912671f63bb48d0bf6587cdab"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WNF1KKzD5eynlEffIl6MOtbgKQ.jpg": {
+    "mtime": 1780830799.9959223,
+    "hash": "410a1aeb1dce0f07ac044e63bd524218"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WNF1KKzD5eynlEffIl6MOtbgKQ_1.jpg": {
+    "mtime": 1780830800.0344188,
+    "hash": "9b3577642f2503ed17dd5bf5e0f390b4"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WRyXmkH5mhZm6B8CEfeLWJ5N8s.jpg": {
+    "mtime": 1780830800.0034485,
+    "hash": "b4306828c453706adb87d9d180692999"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\WRyXmkH5mhZm6B8CEfeLWJ5N8s_1.jpg": {
+    "mtime": 1780830800.0216613,
+    "hash": "df38d2f2f0096258ae14619b3bfec523"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\wtJbXT4sn4v9xWGnqeIfcXms4o.png": {
+    "mtime": 1780830840.1828282,
+    "hash": "d6d1e4b9df3450c0612a9d37d42106fc"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\wtJbXT4sn4v9xWGnqeIfcXms4o_1.png": {
+    "mtime": 1780830840.2837274,
+    "hash": "9dcb989df96a45e54932ee4e5e192400"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\wtJbXT4sn4v9xWGnqeIfcXms4o_2.png": {
+    "mtime": 1780830840.3294847,
+    "hash": "c2ef4dece0c7b18c38bd4b1cce9ae20a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\wtJbXT4sn4v9xWGnqeIfcXms4o_3.png": {
+    "mtime": 1780830840.3861558,
+    "hash": "9123b5256817a05f765e3d4da01de8fa"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\x3VM7k4xmC03cqfpnmbiUENjyk.png": {
+    "mtime": 1780830842.1667953,
+    "hash": "c0970c6eed587d6f479adad8318a600c"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\x3VM7k4xmC03cqfpnmbiUENjyk_1.png": {
+    "mtime": 1780830842.2375615,
+    "hash": "02accc4cc05102f27c41599da1d226c1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\x3VM7k4xmC03cqfpnmbiUENjyk_2.png": {
+    "mtime": 1780830842.2436488,
+    "hash": "7f12e12840a2f85e60594aaff9c67571"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\x3VM7k4xmC03cqfpnmbiUENjyk_3.png": {
+    "mtime": 1780830842.2968075,
+    "hash": "67ba46157491864b69b22079d1a9b982"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\y4UrveU7PL1IGXvxSqpTUqHbnFc.png": {
+    "mtime": 1780830706.478084,
+    "hash": "7bfc9bd3b5f107dfe5143bcef633535a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\y4UrveU7PL1IGXvxSqpTUqHbnFc_1.png": {
+    "mtime": 1780830706.5210576,
+    "hash": "7bfc9bd3b5f107dfe5143bcef633535a"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\YIkrT3eYoFD8zEyRsGRuYviVGxA.jpg": {
+    "mtime": 1780830706.4928887,
+    "hash": "1d16c5ff28ef5824b93d7dac682948bf"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\YIkrT3eYoFD8zEyRsGRuYviVGxA_1.jpg": {
+    "mtime": 1780830706.502596,
+    "hash": "f6dda20d7607b5fe1f5523af4a2417e7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\zLSw0BByLx75PbV3EEwhSzGHuU.png": {
+    "mtime": 1780830841.7598622,
+    "hash": "d51ed6187a5e6c27ed28e90f8f61b912"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\zLSw0BByLx75PbV3EEwhSzGHuU_1.png": {
+    "mtime": 1780830841.832314,
+    "hash": "3bb53493a030422f4df1682e6286bd99"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\zLSw0BByLx75PbV3EEwhSzGHuU_2.png": {
+    "mtime": 1780830841.8597596,
+    "hash": "0348033a9dbc4ddcd67e314ff8d24d8e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\zLSw0BByLx75PbV3EEwhSzGHuU_3.png": {
+    "mtime": 1780830841.9052048,
+    "hash": "1034a26326d192ec8a6664b695d4b824"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\zm6IyRNbw7IZBSU1rC6NaeSWf2A.png": {
+    "mtime": 1780830799.4765534,
+    "hash": "ea01112cb9c4ebf5acd0b877390f6ba8"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ZtxlVnmafD7IXQVXmyYb0ShI7Tk.png": {
+    "mtime": 1780830841.8148215,
+    "hash": "5f249b394d57d189436538d463ddded7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ZtxlVnmafD7IXQVXmyYb0ShI7Tk_1.png": {
+    "mtime": 1780830841.8366456,
+    "hash": "8d3d256f7d85f0d34ca0aff876980c2d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ZtxlVnmafD7IXQVXmyYb0ShI7Tk_2.png": {
+    "mtime": 1780830841.8719194,
+    "hash": "4fc00919de00266c8749be607e6cfb04"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\images\\ZtxlVnmafD7IXQVXmyYb0ShI7Tk_3.png": {
+    "mtime": 1780830841.8929832,
+    "hash": "c94c7dba34e6719d5c0dc447ed8871bc"
   }
 }

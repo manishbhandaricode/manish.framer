@@ -4,178 +4,521 @@
   "graph": {},
   "nodes": [
     {
-      "label": "eslint.config.mjs",
-      "file_type": "code",
-      "source_file": "eslint.config.mjs",
-      "source_location": "L1",
-      "id": "eslint_config_mjs",
-      "community": 6,
-      "norm_label": "eslint.config.mjs"
-    },
-    {
       "label": "next-env.d.ts",
       "file_type": "code",
       "source_file": "next-env.d.ts",
       "source_location": "L1",
       "id": "next_env_d_ts",
-      "community": 7,
+      "community": 8,
       "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "script_main.Cu7JxU37.mjs",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "script_main_cu7jxu37_mjs",
+      "community": 0,
+      "norm_label": "script_main.cu7jxu37.mjs"
+    },
+    {
+      "label": "Xe()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_xe",
+      "community": 0,
+      "norm_label": "xe()"
+    },
+    {
+      "label": "Qe()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_qe",
+      "community": 0,
+      "norm_label": "qe()"
+    },
+    {
+      "label": "re()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_re",
+      "community": 0,
+      "norm_label": "re()"
+    },
+    {
+      "label": "dt()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_dt",
+      "community": 0,
+      "norm_label": "dt()"
+    },
+    {
+      "label": "P()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_p",
+      "community": 0,
+      "norm_label": "p()"
+    },
+    {
+      "label": "Ct()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_ct",
+      "community": 0,
+      "norm_label": "ct()"
+    },
+    {
+      "label": "F()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_f",
+      "community": 0,
+      "norm_label": "f()"
+    },
+    {
+      "label": "Q()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_q",
+      "community": 0,
+      "norm_label": "q()"
+    },
+    {
+      "label": "ae()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_ae",
+      "community": 0,
+      "norm_label": "ae()"
+    },
+    {
+      "label": "pn()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_pn",
+      "community": 0,
+      "norm_label": "pn()"
+    },
+    {
+      "label": "Dn()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_dn",
+      "community": 0,
+      "norm_label": "dn()"
+    },
+    {
+      "label": "On()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_on",
+      "community": 0,
+      "norm_label": "on()"
+    },
+    {
+      "label": "Qn()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_qn",
+      "community": 0,
+      "norm_label": "qn()"
+    },
+    {
+      "label": "$n()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_n",
+      "community": 0,
+      "norm_label": "$n()"
+    },
+    {
+      "label": "er()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_er",
+      "community": 1,
+      "norm_label": "er()"
+    },
+    {
+      "label": "tr()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_tr",
+      "community": 0,
+      "norm_label": "tr()"
+    },
+    {
+      "label": "nr()",
+      "file_type": "code",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "id": "manish_framer_script_main_cu7jxu37_nr",
+      "community": 1,
+      "norm_label": "nr()"
+    },
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "eslint.config.mjs",
+      "id": "eslint_config_mjs"
     },
     {
       "label": "next.config.ts",
       "file_type": "code",
       "source_file": "next.config.ts",
       "source_location": "L1",
-      "id": "next_config_ts",
-      "community": 8,
-      "norm_label": "next.config.ts"
+      "community": 10,
+      "norm_label": "next.config.ts",
+      "id": "next_config_ts"
     },
     {
       "label": "postcss.config.mjs",
       "file_type": "code",
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
-      "id": "postcss_config_mjs",
-      "community": 9,
-      "norm_label": "postcss.config.mjs"
+      "community": 11,
+      "norm_label": "postcss.config.mjs",
+      "id": "postcss_config_mjs"
     },
     {
       "label": "layout.tsx",
       "file_type": "code",
       "source_file": "src\\app\\layout.tsx",
       "source_location": "L1",
-      "id": "src_app_layout_tsx",
-      "community": 0,
-      "norm_label": "layout.tsx"
+      "community": 2,
+      "norm_label": "layout.tsx",
+      "id": "src_app_layout_tsx"
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src\\app\\layout.tsx",
       "source_location": "L22",
-      "id": "app_layout_rootlayout",
-      "community": 0,
-      "norm_label": "rootlayout()"
+      "community": 2,
+      "norm_label": "rootlayout()",
+      "id": "app_layout_rootlayout"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src\\app\\page.tsx",
       "source_location": "L1",
-      "id": "src_app_page_tsx",
-      "community": 10,
-      "norm_label": "page.tsx"
+      "community": 12,
+      "norm_label": "page.tsx",
+      "id": "src_app_page_tsx"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src\\app\\about\\page.tsx",
       "source_location": "L1",
-      "id": "src_app_about_page_tsx",
-      "community": 11,
-      "norm_label": "page.tsx"
+      "community": 13,
+      "norm_label": "page.tsx",
+      "id": "src_app_about_page_tsx"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src\\app\\blogs\\page.tsx",
       "source_location": "L1",
-      "id": "src_app_blogs_page_tsx",
-      "community": 1,
-      "norm_label": "page.tsx"
+      "community": 3,
+      "norm_label": "page.tsx",
+      "id": "src_app_blogs_page_tsx"
     },
     {
       "label": "Blogs()",
       "file_type": "code",
       "source_file": "src\\app\\blogs\\page.tsx",
       "source_location": "L7",
-      "id": "blogs_page_blogs",
-      "community": 1,
-      "norm_label": "blogs()"
+      "community": 3,
+      "norm_label": "blogs()",
+      "id": "blogs_page_blogs"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src\\app\\blogs\\[id]\\page.tsx",
       "source_location": "L1",
-      "id": "src_app_blogs_id_page_tsx",
-      "community": 2,
-      "norm_label": "page.tsx"
+      "community": 4,
+      "norm_label": "page.tsx",
+      "id": "src_app_blogs_id_page_tsx"
     },
     {
       "label": "BlogDetail()",
       "file_type": "code",
       "source_file": "src\\app\\blogs\\[id]\\page.tsx",
       "source_location": "L4",
-      "id": "id_page_blogdetail",
-      "community": 2,
-      "norm_label": "blogdetail()"
+      "community": 4,
+      "norm_label": "blogdetail()",
+      "id": "id_page_blogdetail"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src\\app\\projects\\page.tsx",
       "source_location": "L1",
-      "id": "src_app_projects_page_tsx",
-      "community": 3,
-      "norm_label": "page.tsx"
+      "community": 5,
+      "norm_label": "page.tsx",
+      "id": "src_app_projects_page_tsx"
     },
     {
       "label": "Projects()",
       "file_type": "code",
       "source_file": "src\\app\\projects\\page.tsx",
       "source_location": "L7",
-      "id": "projects_page_projects",
-      "community": 3,
-      "norm_label": "projects()"
+      "community": 5,
+      "norm_label": "projects()",
+      "id": "projects_page_projects"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src\\app\\projects\\[id]\\page.tsx",
       "source_location": "L1",
-      "id": "src_app_projects_id_page_tsx",
-      "community": 4,
-      "norm_label": "page.tsx"
+      "community": 6,
+      "norm_label": "page.tsx",
+      "id": "src_app_projects_id_page_tsx"
     },
     {
       "label": "ProjectDetail()",
       "file_type": "code",
       "source_file": "src\\app\\projects\\[id]\\page.tsx",
       "source_location": "L4",
-      "id": "id_page_projectdetail",
-      "community": 4,
-      "norm_label": "projectdetail()"
+      "community": 6,
+      "norm_label": "projectdetail()",
+      "id": "id_page_projectdetail"
     },
     {
       "label": "Footer.tsx",
       "file_type": "code",
       "source_file": "src\\components\\Footer.tsx",
       "source_location": "L1",
-      "id": "src_components_footer_tsx",
-      "community": 5,
-      "norm_label": "footer.tsx"
+      "community": 7,
+      "norm_label": "footer.tsx",
+      "id": "src_components_footer_tsx"
     },
     {
       "label": "Footer()",
       "file_type": "code",
       "source_file": "src\\components\\Footer.tsx",
       "source_location": "L4",
-      "id": "components_footer_footer",
-      "community": 5,
-      "norm_label": "footer()"
+      "community": 7,
+      "norm_label": "footer()",
+      "id": "components_footer_footer"
     },
     {
       "label": "Header.tsx",
       "file_type": "code",
       "source_file": "src\\components\\Header.tsx",
       "source_location": "L1",
-      "id": "src_components_header_tsx",
-      "community": 12,
-      "norm_label": "header.tsx"
+      "community": 14,
+      "norm_label": "header.tsx",
+      "id": "src_components_header_tsx"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_xe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_qe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_re",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_dt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_p",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_ct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_f",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_q",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_ae",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_pn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_dn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_on",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_qn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_er",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_tr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script_main_cu7jxu37_mjs",
+      "target": "manish_framer_script_main_cu7jxu37_nr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script_main.Cu7JxU37.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "manish_framer_script_main_cu7jxu37_nr",
+      "target": "manish_framer_script_main_cu7jxu37_er",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
