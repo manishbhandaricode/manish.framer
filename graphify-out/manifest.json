@@ -1,0 +1,86 @@
+{
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\eslint.config.mjs": {
+    "mtime": 1780828552.5656998,
+    "hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\next-env.d.ts": {
+    "mtime": 1780828552.7441885,
+    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\next.config.ts": {
+    "mtime": 1780828552.7612545,
+    "hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\postcss.config.mjs": {
+    "mtime": 1780828552.616427,
+    "hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\layout.tsx": {
+    "mtime": 1780828813.2688594,
+    "hash": "273e176907529b33d1decb06ee698a49"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\page.tsx": {
+    "mtime": 1780828841.2013974,
+    "hash": "1e4163f1f2b2139754ec0e98dedb69eb"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\about\\page.tsx": {
+    "mtime": 1780828863.9900126,
+    "hash": "b270b0dc7b620d6feafc35f953968ce7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\blogs\\page.tsx": {
+    "mtime": 1780828888.4100816,
+    "hash": "abb4f6f50a2a66ba69b60258ee4ef564"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\blogs\\[id]\\page.tsx": {
+    "mtime": 1780828909.082423,
+    "hash": "6490e2337b478382dec67915514b96d1"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\projects\\page.tsx": {
+    "mtime": 1780828877.2376747,
+    "hash": "b6cfe179fa6f63ce4759a9a80532e963"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\app\\projects\\[id]\\page.tsx": {
+    "mtime": 1780828908.9528284,
+    "hash": "42d1f4fd8aab288b8b9eaa6b843e2c20"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\components\\Footer.tsx": {
+    "mtime": 1780828961.0095532,
+    "hash": "b2f1e237c07bcb5861cf63a63b3fa7d7"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\src\\components\\Header.tsx": {
+    "mtime": 1780828792.0380838,
+    "hash": "e389b72fdaa873fa44d119a3e459055b"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\AGENTS.md": {
+    "mtime": 1780828697.5914555,
+    "hash": "9e09241799026ac05be315a2f0b50055"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\CLAUDE.md": {
+    "mtime": 1780828697.5919802,
+    "hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\README.md": {
+    "mtime": 1780828552.5296395,
+    "hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\file.svg": {
+    "mtime": 1780828552.6342309,
+    "hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\globe.svg": {
+    "mtime": 1780828552.6578295,
+    "hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\next.svg": {
+    "mtime": 1780828552.678984,
+    "hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\vercel.svg": {
+    "mtime": 1780828552.6985035,
+    "hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "C:\\Users\\manis\\Desktop\\GitHub\\manish.framer\\public\\window.svg": {
+    "mtime": 1780828552.7165225,
+    "hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}
