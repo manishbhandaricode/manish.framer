@@ -13,21 +13,14 @@ export const metadata: Metadata = {
     title: "Manish Bhandari",
     description: "Business analyst, content creator, and product tester. I deliver actionable insights, impactful content, and thorough product reviews for brands seeking growth.",
     images: ["https://framerusercontent.com/images/GspYNIgS18FLAOKeAmvpDd6KO4.png"],
-    url: "https://manishbhandari.framer.website/",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Manish Bhandari",
-    description: "Business analyst, content creator, and product tester.",
-    images: ["https://framerusercontent.com/images/GspYNIgS18FLAOKeAmvpDd6KO4.png"],
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${antonio.variable}`}>
+      <body className={`${inter.variable} ${antonio.variable}`} style={{ background: "#111112" }}>
         {children}
       </body>
     </html>

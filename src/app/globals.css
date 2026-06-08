@@ -2,42 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── EXACT Framer token system ── */
-body {
-  --token-text:         #303030;
-  --token-accent:       #5e67e6;
-  --token-white:        #ffffff;
-  --token-bg:           #ffffff;
-  --token-border:       #dadada;
-  --token-muted:        #8f8f8f;
-  --token-red:          #ff2244;
-  --token-nav-bg:       #ffffffe6;
-  --token-border2:      #dadada;
-  --token-green:        #0bde66;
-  --token-card:         #f5f5f5;
-  --token-black:        #000000;
-  --token-muted2:       #8f8f8f;
-  --token-transparent:  #fff0;
-  --token-black2:       #000000;
-  --token-white2:       #ffffff;
+html, body, #main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --token-text:         #ffffff;
-    --token-accent:       #d0ff71;
-    --token-white:        #303030;
-    --token-bg:           #1a1a1b;
-    --token-border:       #5c5c5c;
-    --token-muted:        #b5b5b5;
-    --token-nav-bg:       #0f0f0fe6;
-    --token-border2:      #0f0f0f;
-    --token-card:         #333333;
-    --token-black:        #e3af20;
-    --token-muted2:       #d4d4d4;
-    --token-transparent:  #0f0f0f;
-  }
-}
+* { box-sizing: border-box; }
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
 
 html {
   scroll-behavior: smooth;
@@ -45,23 +17,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #main {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: var(--token-bg);
-  color: var(--token-text);
+  background: #111112;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
 }
 
-* { box-sizing: border-box; }
-h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
-
-/* Scrollbar hide */
-.scrollbar-hide::-webkit-scrollbar { display: none; }
-.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+input::placeholder { color: #555; }
+input:focus { border-color: #d0ff71 !important; }
