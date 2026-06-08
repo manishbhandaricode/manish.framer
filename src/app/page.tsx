@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import { useInView } from "framer-motion";
 
 /* ── Scroll Reveal ── */
@@ -13,7 +13,7 @@ function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   const inView = useInView(ref, { once: true, margin: "-60px 0px" });
   return (
     <motion.div ref={ref}
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 48 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.75, delay, ease: [0.25, 0.46, 0.45, 0.94] }}>
       {children}
@@ -21,155 +21,126 @@ function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   );
 }
 
-/* ── Data ── */
-const skills = [
-  "Business Analysis", "Market Research", "Content Strategy",
-  "Product Testing", "User Stories", "Beta Testing",
-  "Competitive Analysis", "Financial Analysis", "Pitch Decks",
-  "Data Storytelling", "Strategic Audits", "Wealthtech",
+/* ── Services Accordion ── */
+const services = [
+  {
+    num: "1.", title: "BUSINESS ANALYSIS",
+    desc: "Gather and analyze business requirements to align with stakeholder goals. Model processes and workflows. Prepare detailed documentation and business cases. Facilitate communication between technical teams and business stakeholders.",
+  },
+  {
+    num: "2.", title: "PRODUCT TESTING",
+    desc: "Define product vision and strategy. Lead cross-functional teams. Prioritize features and manage product roadmaps. Analyze user feedback and market trends.",
+  },
+  {
+    num: "3.", title: "CONTENT STRATEGY",
+    desc: "Responsive website design. Landing page design and optimization. Webflow development and customization. Website maintenance and updates.",
+  },
+  {
+    num: "4.", title: "CONTENT REASEARCH",
+    desc: "Brand strategy and identity development. Visual style guide creation. Typography and color scheme selection. Brand storytelling and messaging.",
+  },
 ];
 
-const projects = [
+function ServiceAccordion() {
+  const [open, setOpen] = useState<number | null>(0);
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      {services.map((s, i) => (
+        <div key={i}>
+          <div
+            onClick={() => setOpen(open === i ? null : i)}
+            style={{
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              padding: "22px 0", cursor: "pointer",
+              borderTop: i === 0 ? "1px solid rgba(255,255,255,0.15)" : undefined,
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontFamily: "var(--font-antonio)", fontWeight: 400, fontSize: 32, color: "#d0ff71", lineHeight: 1 }}>
+                {s.num}
+              </span>
+              <span style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 28, color: "#fff", letterSpacing: "0.02em", textTransform: "uppercase" }}>
+                {s.title}
+              </span>
+            </div>
+            <motion.span
+              animate={{ rotate: open === i ? 180 : 0 }}
+              transition={{ duration: 0.25 }}
+              style={{ color: "#fff", fontSize: 20, flexShrink: 0 }}
+            >
+              ↑
+            </motion.span>
+          </div>
+          <motion.div
+            initial={false}
+            animate={{ height: open === i ? "auto" : 0, opacity: open === i ? 1 : 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            style={{ overflow: "hidden" }}
+          >
+            <p style={{
+              fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300,
+              color: "rgba(255,255,255,0.7)", lineHeight: 1.7,
+              paddingBottom: 20, margin: 0,
+            }}>
+              {s.desc}
+            </p>
+          </motion.div>
+          <div style={{ height: 1, background: "rgba(255,255,255,0.15)" }} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ── Featured Projects data ── */
+const featuredProjects = [
   {
-    badge: "Report", year: "2025", industry: "Finance", client: "Perccent",
-    title: "Unlocking India's Untapped Investor Segments",
+    badge: "Report",
+    title: "UNLOCKING INDIA'S UNTAPPED INVESTOR SEGMENTS",
     desc: "In-depth analysis of Minor and NRI participation, barriers, and strategic opportunities to drive inclusive market growth.",
-    href: "/projects",
+    href: "/projects/unlocking-india",
     img: "/images/nDHCjPrlqtG6mOmj2oiCsjD8Y.png",
   },
   {
-    badge: "Report", year: "2025", industry: "Wealthtech", client: "Perccent",
-    title: "Dezerv: The 8x AUM Growth Story",
-    desc: "Comprehensive analysis of Dezerv's rapid AUM growth from ₹1,265 cr to over ₹10,000 cr in two years.",
-    href: "/projects",
+    badge: "Report",
+    title: "DEZERV: THE 8X AUM GROWTH STORY",
+    desc: "Comprehensive analysis of Dezerv's rapid AUM growth from ₹1,265 cr to over ₹10,000 cr in two years, highlighting its transparent fee model, AI-driven portfolio engine, and strategic investments in technology and client experience.",
+    href: "/projects/dezerv",
     img: "/images/oFEHRfUjlxL61HaDFkrYEau1ekM.png",
   },
   {
-    badge: "Pitch Deck", year: "2025", industry: "HRaaS", client: "Crystal Peak",
-    title: "Crystal Peak Pitch Deck",
-    desc: "A strategic HR proposal focused on bridging the gap between business vision and precision recruitment.",
-    href: "/projects",
+    badge: "Research",
+    title: "MUTUAL FUND GOALS AND INVESTOR ALIGNMENT",
+    desc: "Research focused on aligning mutual fund categories with investor financial goals to enhance engagement and simplify investment decisions.",
+    href: "/projects/shopease-redesign-sprint",
+    img: "/images/oRsdrqp2gE6sSLBWIb9RzABkPVg.png",
+  },
+  {
+    badge: "Pitch Deck",
+    title: "CRYSTAL PEAK PITCH DECK",
+    desc: "A strategic HR proposal focused on bridging the gap between business vision and precision recruitment through data-driven talent solutions.",
+    href: "/projects/crystal-peak",
     img: "/images/tp7x5VoKKEmYx7s57KofuIMJddE.png",
   },
 ];
 
+/* ── Blog data ── */
 const blogs = [
   {
     category: "Content & Brand Marketing", date: "Mar 30, 2025",
-    title: "The Content Flywheel: Scaling Brand Authority",
-    desc: "Discover how a unified content strategy turns one-off posts into a self-sustaining engine for organic growth.",
-    href: "/blogs",
+    title: "THE CONTENT FLYWHEEL: SCALING BRAND AUTHORITY",
+    desc: "Discover how a unified content strategy turns one-off posts into a self-sustaining engine for organic growth and trust.",
+    href: "/blogs/the-content-flywheel",
     img: "/images/iQwuEVadqLZLDnwjblKI9Kro8Ss.png",
   },
   {
-    category: "Business Analysis & Strategy", date: "Apr 22, 2025",
-    title: "The Strategic Audit: Maximizing Business Efficiency",
-    desc: "Learn how to identify operational bottlenecks and leverage data-driven insights to streamline your brand.",
-    href: "/blogs",
-    img: "/images/k6ZrTq3gELjvgT07LsIHjYqPc.png",
-  },
-  {
     category: "Product Management", date: "Apr 27, 2025",
-    title: "How to Scale Quality with Beta Testing",
+    title: "HOW TO SCALE QUALITY WITH BETA TESTING",
     desc: "Master the art of pre-launch validation to eliminate UX friction and ensure a seamless product debut.",
-    href: "/blogs",
+    href: "/blogs/how-to-scale-quality-with-beta-testing",
     img: "/images/tZsUTzJDASlMX3KgH1WIKykXNXs.png",
   },
 ];
-
-/* ── Project Card ── */
-function ProjectCard({ p }: { p: typeof projects[0] }) {
-  return (
-    <Link href={p.href} style={{ display: "block", height: "100%", textDecoration: "none" }}>
-      <motion.div
-        whileHover={{ y: -6, borderColor: "#d0ff71" }}
-        transition={{ duration: 0.3 }}
-        style={{
-          background: "#1e1e1f", border: "1px solid #333",
-          borderRadius: 20, overflow: "hidden",
-          display: "flex", flexDirection: "column", height: "100%",
-        }}
-      >
-        <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden", flexShrink: 0 }}>
-          <motion.img src={p.img} alt={p.title}
-            whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-          />
-        </div>
-        <div style={{ padding: "20px 24px 24px", display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-            <span style={{
-              background: "rgba(208,255,113,0.12)", color: "#d0ff71",
-              border: "1px solid rgba(208,255,113,0.25)",
-              borderRadius: 999, padding: "3px 10px",
-              fontFamily: "var(--font-inter)", fontSize: 11, fontWeight: 600,
-            }}>{p.badge}</span>
-            <span style={{ fontFamily: "var(--font-inter)", fontSize: 12, color: "#777" }}>
-              {p.year} · {p.industry} · {p.client}
-            </span>
-          </div>
-          <h3 style={{
-            fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 18,
-            textTransform: "uppercase", lineHeight: 1.25, color: "#fff", margin: 0,
-          }}>{p.title}</h3>
-          <p style={{ fontFamily: "var(--font-inter)", fontSize: 14, color: "#888", lineHeight: 1.65, flex: 1, margin: 0 }}>
-            {p.desc}
-          </p>
-          <div style={{
-            display: "flex", alignItems: "center", gap: 4, marginTop: 8,
-            fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 12,
-            letterSpacing: "0.1em", textTransform: "uppercase", color: "#d0ff71",
-          }}>View Project →</div>
-        </div>
-      </motion.div>
-    </Link>
-  );
-}
-
-/* ── Blog Card ── */
-function BlogCard({ b }: { b: typeof blogs[0] }) {
-  return (
-    <Link href={b.href} style={{ display: "block", height: "100%", textDecoration: "none" }}>
-      <motion.div
-        whileHover={{ y: -6, borderColor: "#d0ff71" }}
-        transition={{ duration: 0.3 }}
-        style={{
-          background: "#1e1e1f", border: "1px solid #333",
-          borderRadius: 20, overflow: "hidden",
-          display: "flex", flexDirection: "column", height: "100%",
-        }}
-      >
-        <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden", flexShrink: 0 }}>
-          <motion.img src={b.img} alt={b.title}
-            whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-          />
-        </div>
-        <div style={{ padding: "20px 24px 24px", display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
-          <span style={{
-            background: "rgba(208,255,113,0.12)", color: "#d0ff71",
-            border: "1px solid rgba(208,255,113,0.25)",
-            borderRadius: 999, padding: "3px 10px", alignSelf: "flex-start",
-            fontFamily: "var(--font-inter)", fontSize: 11, fontWeight: 600,
-          }}>{b.category}</span>
-          <span style={{ fontFamily: "var(--font-inter)", fontSize: 12, color: "#777" }}>{b.date}</span>
-          <h3 style={{
-            fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 18,
-            textTransform: "uppercase", lineHeight: 1.25, color: "#fff", margin: 0,
-          }}>{b.title}</h3>
-          <p style={{ fontFamily: "var(--font-inter)", fontSize: 14, color: "#888", lineHeight: 1.65, flex: 1, margin: 0 }}>
-            {b.desc}
-          </p>
-          <div style={{
-            display: "flex", alignItems: "center", gap: 4, marginTop: 8,
-            fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 12,
-            letterSpacing: "0.1em", textTransform: "uppercase", color: "#d0ff71",
-          }}>Read Post →</div>
-        </div>
-      </motion.div>
-    </Link>
-  );
-}
 
 /* ══════════════════════════════════════════════
    HOMEPAGE
@@ -179,327 +150,378 @@ export default function HomePage() {
     <>
       <Header />
 
-      {/* ── GLOBAL STYLES ── */}
       <style>{`
-        body { background: #111112; }
-
-        /* noise texture overlay */
-        body::before {
-          content: '';
-          position: fixed;
-          inset: 0;
-          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-          pointer-events: none;
-          z-index: 0;
-          opacity: 0.5;
-        }
-
-        /* Available dot (top-left) */
-        #avail-dot {
-          position: fixed; top: 22px; left: 22px; z-index: 200;
-          width: 10px; height: 10px; border-radius: 50%;
-          background: #0bde66;
-          box-shadow: 0 0 8px #0bde66;
-          animation: glow 2s ease-in-out infinite;
-        }
-        @keyframes glow {
-          0%, 100% { opacity: 1; box-shadow: 0 0 8px #0bde66; }
-          50%       { opacity: 0.5; box-shadow: 0 0 3px #0bde66; }
-        }
-
+        body { background: #1a1a1b; }
         @media(max-width: 768px) {
-          .hero-word { font-size: 15vw !important; }
-          .hero-grid { flex-direction: column !important; align-items: center !important; }
-          .hero-photo { width: 240px !important; height: 320px !important; }
-          .hero-left, .hero-right { text-align: center !important; flex: none !important; }
-          .hero-right-content { align-items: center !important; }
-          .grid-3col { grid-template-columns: 1fr !important; }
-          .grid-2col { grid-template-columns: 1fr !important; }
-        }
-        @media(min-width: 769px) and (max-width: 1024px) {
-          .hero-word { font-size: 10vw !important; }
-          .grid-3col { grid-template-columns: repeat(2, 1fr) !important; }
+          .hero-split { flex-direction: column !important; text-align: center; }
+          .hero-word { font-size: 18vw !important; letter-spacing: -1px !important; }
+          .hero-photo-wrap { width: 260px !important; margin: 0 auto; }
+          .hero-right { align-items: center !important; }
+          .two-col { flex-direction: column !important; }
+          .project-card-inner { flex-direction: column !important; }
+          .blog-grid { grid-template-columns: 1fr !important; }
+          .footer-row { flex-direction: column !important; align-items: flex-start !important; padding: 32px 24px !important; }
         }
       `}</style>
 
-      {/* Available dot */}
-      <div id="avail-dot" />
+      {/* Available dot — top-left */}
+      <div style={{
+        position: "fixed", top: 22, left: 22, zIndex: 200,
+        width: 10, height: 10, borderRadius: "50%",
+        background: "#0bde66", boxShadow: "0 0 8px #0bde66",
+        animation: "none",
+      }} />
 
-      <main style={{ position: "relative", zIndex: 1 }}>
+      <main style={{ background: "#1a1a1b", position: "relative" }}>
 
-        {/* ════════════════════════════════════════
-            HERO — split layout: BUSINESS | PHOTO | FINANCE
-        ════════════════════════════════════════ */}
-        <section style={{
-          minHeight: "100vh", display: "flex", alignItems: "center",
-          padding: "100px 48px 60px", position: "relative",
-        }}>
-          <div className="hero-grid" style={{
-            width: "100%", maxWidth: 1400, margin: "0 auto",
-            display: "flex", alignItems: "center",
-            gap: 0,
-          }}>
+        {/* ═══════════════════════════════════════════
+            SECTION 1 — HERO
+            BUSINESS [PHOTO] FINANCE
+        ═══════════════════════════════════════════ */}
+        <section style={{ minHeight: "100vh", display: "flex", alignItems: "center", padding: "100px 60px 60px", position: "relative" }}>
+          <div className="hero-split" style={{ width: "100%", maxWidth: 1400, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
-            {/* LEFT — "BUSINESS" */}
-            <div className="hero-left" style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
-              <motion.p
-                initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                style={{
-                  fontFamily: "var(--font-inter)", fontSize: 13, fontWeight: 400,
-                  textTransform: "uppercase", letterSpacing: "0.2em",
-                  color: "rgba(255,255,255,0.6)", marginBottom: 8, margin: 0,
-                }}
-              >
+            {/* LEFT: BUSINESS */}
+            <div style={{ flex: 1 }}>
+              <motion.p initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                style={{ fontFamily: "var(--font-inter)", fontSize: 14, fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.2em", color: "rgba(255,255,255,0.55)", marginBottom: 4, margin: 0 }}>
                 Manish Bhandari
               </motion.p>
-              <motion.h1
-                className="hero-word"
+              <motion.h1 className="hero-word"
                 initial={{ opacity: 0, x: -60 }} animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+                transition={{ duration: 0.85, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
                 style={{
                   fontFamily: "var(--font-antonio)", fontWeight: 700,
-                  fontSize: "clamp(64px, 9vw, 140px)",
-                  textTransform: "uppercase", lineHeight: 0.88,
-                  color: "#ffffff", margin: 0, letterSpacing: "-2px",
-                }}
-              >
+                  fontSize: 120, lineHeight: "132px", letterSpacing: "-3.6px",
+                  textTransform: "uppercase", color: "#ffffff", margin: 0,
+                }}>
                 Business
               </motion.h1>
             </div>
 
-            {/* CENTER — Photo card */}
-            <motion.div
-              className="hero-photo"
-              initial={{ opacity: 0, scale: 0.88, y: 30 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
+            {/* CENTER: Photo card */}
+            <motion.div className="hero-photo-wrap"
+              initial={{ opacity: 0, y: 40, scale: 0.9 }} animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-              style={{
-                flexShrink: 0,
-                width: "clamp(240px, 22vw, 340px)",
-                aspectRatio: "3/4",
-                position: "relative",
-                zIndex: 10,
-                marginLeft: "clamp(-20px, -3vw, -40px)",
-                marginRight: "clamp(-20px, -3vw, -40px)",
-              }}
-            >
-              {/* Card frame */}
+              style={{ flexShrink: 0, width: 347, position: "relative", zIndex: 10, margin: "0 -20px" }}>
               <div style={{
-                width: "100%", height: "100%",
-                borderRadius: 28,
-                background: "#2a2a2b",
-                border: "2px solid rgba(255,255,255,0.12)",
-                overflow: "hidden",
-                position: "relative",
-                boxShadow: "0 32px 80px rgba(0,0,0,0.6)",
+                width: "100%", height: 486, borderRadius: 28,
+                background: "#2a2828",
+                overflow: "hidden", position: "relative",
+                boxShadow: "0 40px 100px rgba(0,0,0,0.7)",
+                border: "1px solid rgba(255,255,255,0.08)",
               }}>
-                <img
-                  src="/images/mIm9lrb8l1W8blmrYlGXhMAdo.png"
-                  alt="Manish Bhandari"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }}
-                />
-
-                {/* Wave/Hi button — bottom left of photo */}
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 10 }}
-                  whileTap={{ scale: 0.9 }}
+                <img src="/images/mIm9lrb8l1W8blmrYlGXhMAdo.png" alt="Manish Bhandari"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
+                {/* Wave button */}
+                <motion.div whileHover={{ scale: 1.12, rotate: 15 }} whileTap={{ scale: 0.92 }}
                   style={{
-                    position: "absolute", bottom: -20, left: -20,
-                    width: 56, height: 56, borderRadius: "50%",
-                    background: "#d0ff71",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontSize: 24, cursor: "pointer",
-                    boxShadow: "0 8px 24px rgba(208,255,113,0.4)",
-                    zIndex: 20,
-                  }}
-                >
+                    position: "absolute", bottom: -24, left: -24,
+                    width: 72, height: 72, borderRadius: "50%",
+                    background: "#d0ff71", display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: 30, cursor: "pointer",
+                    boxShadow: "0 8px 32px rgba(208,255,113,0.45)", zIndex: 20,
+                  }}>
                   ✋
                 </motion.div>
-
-                {/* Dark mode toggle — bottom center */}
+                {/* Mode toggle */}
                 <div style={{
-                  position: "absolute", bottom: -16, left: "50%", transform: "translateX(-50%)",
-                  background: "rgba(30,30,30,0.9)",
-                  border: "1px solid rgba(255,255,255,0.1)",
-                  borderRadius: 999, padding: "4px 8px",
-                  display: "flex", alignItems: "center", gap: 4,
-                  zIndex: 20,
+                  position: "absolute", bottom: -18, left: "50%", transform: "translateX(-50%)",
+                  background: "rgba(20,20,20,0.95)", border: "1px solid rgba(255,255,255,0.1)",
+                  borderRadius: 999, padding: "5px 10px", display: "flex", alignItems: "center", zIndex: 20,
                 }}>
-                  <div style={{
-                    width: 36, height: 20, borderRadius: 999,
-                    background: "#333", position: "relative", cursor: "pointer",
-                    border: "1px solid rgba(255,255,255,0.15)",
-                  }}>
-                    <div style={{
-                      position: "absolute", top: 2, left: 2,
-                      width: 14, height: 14, borderRadius: "50%",
-                      background: "#666",
-                    }} />
+                  <div style={{ width: 40, height: 22, borderRadius: 999, background: "#333", border: "1px solid #444", position: "relative", cursor: "pointer" }}>
+                    <div style={{ position: "absolute", top: 3, left: 3, width: 14, height: 14, borderRadius: "50%", background: "#666" }} />
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* RIGHT — "FINANCE" + subtitle */}
+            {/* RIGHT: FINANCE */}
             <div className="hero-right" style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-              <motion.h1
-                className="hero-word"
+              <motion.h1 className="hero-word"
                 initial={{ opacity: 0, x: 60 }} animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+                transition={{ duration: 0.85, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
                 style={{
                   fontFamily: "var(--font-antonio)", fontWeight: 700,
-                  fontSize: "clamp(64px, 9vw, 140px)",
-                  textTransform: "uppercase", lineHeight: 0.88,
-                  color: "#ffffff", margin: 0, letterSpacing: "-2px", textAlign: "right",
-                }}
-              >
+                  fontSize: 120, lineHeight: "132px", letterSpacing: "-3.6px",
+                  textTransform: "uppercase", color: "#ffffff", margin: 0, textAlign: "right",
+                }}>
                 Finance
               </motion.h1>
-              <div className="hero-right-content" style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", marginTop: 20 }}>
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.4 }}
-                  style={{
-                    fontFamily: "var(--font-inter)", fontSize: "clamp(13px, 1.2vw, 15px)",
-                    color: "rgba(255,255,255,0.65)", lineHeight: 1.6,
-                    textAlign: "right", maxWidth: 280, margin: 0,
-                  }}
-                >
-                  Business Analyst & Content<br />Strategist With A Flexible Approach
-                </motion.p>
-              </div>
+              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+                style={{
+                  fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300,
+                  color: "rgba(255,255,255,0.65)", lineHeight: 1.65,
+                  textAlign: "right", maxWidth: 260, margin: "16px 0 0", 
+                }}>
+                Business Analyst & Content<br />Strategist With A Flexible Approach
+              </motion.p>
             </div>
           </div>
         </section>
 
-        {/* ════════════════════════════════════════
-            SKILLS MARQUEE TICKER
-        ════════════════════════════════════════ */}
-        <div style={{
-          borderTop: "1px solid #2a2a2a",
-          borderBottom: "1px solid #2a2a2a",
-          overflow: "hidden", padding: "14px 0",
-        }}>
-          <motion.div
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 28, ease: "linear", repeat: Infinity }}
-            style={{ display: "flex", width: "max-content" }}
-          >
-            {[...skills, ...skills].map((s, i) => (
-              <div key={i} style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
-                <span style={{
-                  fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13,
-                  textTransform: "uppercase", letterSpacing: "0.2em",
-                  color: "#555", whiteSpace: "nowrap", padding: "0 20px",
-                }}>
-                  {s}
-                </span>
-                <span style={{ color: "#d0ff71", fontSize: 14, flexShrink: 0 }}>✦</span>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* ════════════════════════════════════════
-            FEATURED PROJECTS
-        ════════════════════════════════════════ */}
-        <section style={{ maxWidth: 1200, margin: "0 auto", padding: "100px 40px" }}>
-          <Reveal>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48 }}>
-              <div>
-                <p style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13, letterSpacing: "0.2em", textTransform: "uppercase", color: "#d0ff71", margin: "0 0 8px" }}>
-                  Selected Work
-                </p>
-                <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: "clamp(36px, 4vw, 52px)", textTransform: "uppercase", lineHeight: 1, color: "#fff", margin: 0 }}>
-                  Featured Projects
+        {/* ═══════════════════════════════════════════
+            SECTION 2 — WHAT I CAN DO FOR YOU
+        ═══════════════════════════════════════════ */}
+        <section style={{ maxWidth: 1200, margin: "0 auto", padding: "100px 60px" }}>
+          <div className="two-col" style={{ display: "flex", gap: 80, alignItems: "flex-start" }}>
+            {/* Left: heading + body + accordion */}
+            <div style={{ flex: 1 }}>
+              <Reveal>
+                <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 60, textTransform: "uppercase", lineHeight: "78px", color: "#fff", margin: "0 0 28px" }}>
+                  What I Can Do<br />For You
                 </h2>
-              </div>
-              <Link href="/projects" style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d0ff71", textDecoration: "none" }}>
-                View All →
-              </Link>
+                <p style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, margin: "0 0 40px" }}>
+                  I bridge the gap between business strategy and creative execution. I provide Business Analysis and Product Testing to ensure your foundation is solid, followed by high-impact Content Strategy and Marketing for LinkedIn and Instagram. From research to promotion, I build digital systems that turn brand stories into measurable growth.
+                </p>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <ServiceAccordion />
+              </Reveal>
             </div>
+            {/* Right: 3D MB monogram */}
+            <Reveal delay={0.15}>
+              <div style={{ flexShrink: 0, width: 280, display: "flex", alignItems: "center", justifyContent: "center", marginTop: 80 }}>
+                <div style={{
+                  width: 240, height: 240, borderRadius: "50%",
+                  background: "radial-gradient(circle at 35% 35%, #3a3a3a, #0a0a0a)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  boxShadow: "inset -8px -8px 20px rgba(0,0,0,0.8), inset 4px 4px 12px rgba(255,255,255,0.06), 0 20px 60px rgba(0,0,0,0.6)",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                }}>
+                  <span style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 72, color: "rgba(255,255,255,0.9)", letterSpacing: "-2px", textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
+                    MB
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* ═══════════════════════════════════════════
+            SECTION 3 — ABOUT ME
+        ═══════════════════════════════════════════ */}
+        <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 60px 100px" }}>
+          <div className="two-col" style={{ display: "flex", gap: 80, alignItems: "center" }}>
+            {/* Left: text */}
+            <div style={{ flex: 1 }}>
+              <Reveal>
+                <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 60, textTransform: "uppercase", lineHeight: "78px", color: "#fff", margin: "0 0 28px" }}>
+                  About Me
+                </h2>
+                <p style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.7)", lineHeight: 1.75, margin: "0 0 32px" }}>
+                  I&apos;m a multidisciplinary freelancer combining business analysis, product testing, and content strategy to help brands build smarter and grow faster. My work focuses on translating complex data into clear strategies that drive measurable results — from stakeholder-aligned requirement documents to high-impact LinkedIn and Instagram content.
+                </p>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 32 }}>
+                  <a href="tel:+919835685697" style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.8)", textDecoration: "none" }}>
+                    <strong style={{ color: "#fff", fontWeight: 600 }}>Call Today :</strong> +91 9835685697
+                  </a>
+                  <a href="mailto:manish.bhandari3717@gmail.com" style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.8)", textDecoration: "none" }}>
+                    <strong style={{ color: "#fff", fontWeight: 600 }}>Email :</strong> manish.bhandari3717@gmail.com
+                  </a>
+                </div>
+                {/* Social icons */}
+                <div style={{ display: "flex", gap: 16, marginBottom: 32 }}>
+                  {[
+                    { href: "https://x.com/home", icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> },
+                    { href: "https://www.instagram.com/", icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> },
+                    { href: "https://www.linkedin.com/in/manish-b-22aba534a/", icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> },
+                  ].map((s, i) => (
+                    <a key={i} href={s.href} target="_blank" rel="noopener noreferrer"
+                      style={{ color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", transition: "color 0.2s" }}
+                      onMouseEnter={e => (e.currentTarget.style.color = "#d0ff71")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.7)")}>
+                      {s.icon}
+                    </a>
+                  ))}
+                </div>
+                {/* MY STORY button */}
+                <Link href="/about" style={{ textDecoration: "none", display: "inline-block" }}>
+                  <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
+                    style={{
+                      display: "inline-flex", alignItems: "center",
+                      border: "1px solid #d0ff71", borderRadius: 999,
+                      padding: "12px 32px",
+                      fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 16,
+                      textTransform: "uppercase", letterSpacing: "0.12em",
+                      color: "#d0ff71", cursor: "pointer",
+                    }}>
+                    My Story
+                  </motion.div>
+                </Link>
+              </Reveal>
+            </div>
+            {/* Right: photo */}
+            <Reveal delay={0.1}>
+              <div style={{ flexShrink: 0, width: 380 }}>
+                <div style={{
+                  width: "100%", aspectRatio: "3/4",
+                  borderRadius: 24, overflow: "hidden",
+                  border: "3px solid rgba(255,255,255,0.15)",
+                  boxShadow: "0 24px 60px rgba(0,0,0,0.5)",
+                }}>
+                  <img src="/images/mIm9lrb8l1W8blmrYlGXhMAdo.png" alt="Manish Bhandari"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* ═══════════════════════════════════════════
+            SECTION 4 — FEATURED PROJECTS
+            Single column, each card ~1120px × 747px
+        ═══════════════════════════════════════════ */}
+        <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 60px 100px" }}>
+          <Reveal>
+            <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 60, textTransform: "uppercase", lineHeight: "78px", color: "#fff", margin: "0 0 20px" }}>
+              Featured Projects
+            </h2>
+            <p style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: "0 0 52px", maxWidth: 720 }}>
+              These selected projects reflect my passion for blending strategy with creativity — solving real problems through thoughtful design and impactful storytelling.
+            </p>
           </Reveal>
 
-          <div className="grid-3col" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
-            {projects.map((p, i) => (
-              <Reveal key={i} delay={i * 0.08}>
-                <ProjectCard p={p} />
+          {/* Single-column stacked project cards */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+            {featuredProjects.map((p, i) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <Link href={p.href} style={{ textDecoration: "none", display: "block" }}>
+                  <motion.div
+                    whileHover={{ scale: 1.007 }}
+                    transition={{ duration: 0.3 }}
+                    style={{
+                      background: "#1e1e1f", borderRadius: 20, overflow: "hidden",
+                      border: "1px solid rgba(255,255,255,0.07)",
+                      boxShadow: "0 8px 32px rgba(0,0,0,0.4)",
+                    }}
+                  >
+                    {/* Cover image — 16:9 */}
+                    <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      <img src={p.img} alt={p.title}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                      {/* Badge overlay */}
+                      <div style={{ position: "absolute", top: 20, left: 20 }}>
+                        <span style={{
+                          background: "#d0ff71", color: "#000",
+                          fontFamily: "var(--font-inter)", fontSize: 13, fontWeight: 600,
+                          padding: "5px 14px", borderRadius: 999,
+                        }}>{p.badge}</span>
+                      </div>
+                    </div>
+                    {/* Content below image */}
+                    <div style={{ padding: "32px 40px 36px" }}>
+                      <h3 style={{
+                        fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 32,
+                        textTransform: "uppercase", lineHeight: 1.25, color: "#fff", margin: "0 0 16px",
+                      }}>{p.title}</h3>
+                      <p style={{ fontFamily: "var(--font-inter)", fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: 0 }}>
+                        {p.desc}
+                      </p>
+                    </div>
+                  </motion.div>
+                </Link>
               </Reveal>
             ))}
           </div>
-        </section>
 
-        {/* ════════════════════════════════════════
-            LATEST BLOGS
-        ════════════════════════════════════════ */}
-        <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px 100px" }}>
+          {/* Browse all CTA */}
           <Reveal>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48 }}>
-              <div>
-                <p style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13, letterSpacing: "0.2em", textTransform: "uppercase", color: "#d0ff71", margin: "0 0 8px" }}>
-                  Insights & Writing
-                </p>
-                <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: "clamp(36px, 4vw, 52px)", textTransform: "uppercase", lineHeight: 1, color: "#fff", margin: 0 }}>
-                  Latest Blogs
-                </h2>
-              </div>
-              <Link href="/blogs" style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d0ff71", textDecoration: "none" }}>
-                View All →
+            <div style={{ display: "flex", justifyContent: "center", marginTop: 56 }}>
+              <Link href="/projects" style={{ textDecoration: "none" }}>
+                <motion.div whileHover={{ scale: 1.04, background: "#d0ff71", color: "#000" }} whileTap={{ scale: 0.96 }}
+                  transition={{ duration: 0.2 }}
+                  style={{
+                    display: "inline-flex", alignItems: "center",
+                    border: "1px solid #d0ff71", borderRadius: 999,
+                    padding: "14px 40px",
+                    fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 16,
+                    textTransform: "uppercase", letterSpacing: "0.1em",
+                    color: "#d0ff71", cursor: "pointer",
+                  }}>
+                  Browse All Projects
+                </motion.div>
               </Link>
             </div>
           </Reveal>
+        </section>
 
-          <div className="grid-3col" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
+        {/* ═══════════════════════════════════════════
+            SECTION 5 — BLOGS (2-column grid)
+        ═══════════════════════════════════════════ */}
+        <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 60px 100px" }}>
+          <Reveal>
+            <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 60, textTransform: "uppercase", lineHeight: "78px", color: "#fff", margin: "0 0 20px" }}>
+              Blogs
+            </h2>
+            <p style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: "0 0 52px", maxWidth: 720 }}>
+              From data-driven insights to market-ready products, these articles offer strategies to help you optimize your business, validate new ideas, and scale high-impact marketing across your digital landscape.
+            </p>
+          </Reveal>
+
+          {/* 2-column blog grid */}
+          <div className="blog-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 40 }}>
             {blogs.map((b, i) => (
               <Reveal key={i} delay={i * 0.08}>
-                <BlogCard b={b} />
+                <Link href={b.href} style={{ textDecoration: "none", display: "block", height: "100%" }}>
+                  <motion.div
+                    whileHover={{ y: -6 }} transition={{ duration: 0.3 }}
+                    style={{
+                      background: "#1e1e1f", borderRadius: 20, overflow: "hidden",
+                      border: "1px solid rgba(255,255,255,0.07)",
+                      display: "flex", flexDirection: "column", height: "100%",
+                    }}
+                  >
+                    <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden" }}>
+                      <img src={b.img} alt={b.title}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                    </div>
+                    <div style={{ padding: "24px 28px 28px", flex: 1, display: "flex", flexDirection: "column", gap: 10 }}>
+                      <span style={{
+                        background: "transparent", color: "#d0ff71",
+                        border: "1px solid rgba(208,255,113,0.4)",
+                        borderRadius: 999, padding: "4px 12px", alignSelf: "flex-start",
+                        fontFamily: "var(--font-inter)", fontSize: 12, fontWeight: 400,
+                      }}>{b.category}</span>
+                      <span style={{ fontFamily: "var(--font-inter)", fontSize: 13, color: "rgba(255,255,255,0.45)" }}>{b.date}</span>
+                      <h3 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 24, textTransform: "uppercase", lineHeight: 1.25, color: "#fff", margin: 0 }}>
+                        {b.title}
+                      </h3>
+                      <p style={{ fontFamily: "var(--font-inter)", fontSize: 14, fontWeight: 300, color: "rgba(255,255,255,0.6)", lineHeight: 1.65, margin: 0, flex: 1 }}>
+                        {b.desc}
+                      </p>
+                    </div>
+                  </motion.div>
+                </Link>
               </Reveal>
             ))}
           </div>
-        </section>
 
-        {/* ════════════════════════════════════════
-            NEWSLETTER CTA
-        ════════════════════════════════════════ */}
-        <Reveal>
-          <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px 120px" }}>
-            <div style={{
-              background: "#1a1a1b", border: "1px solid #2a2a2a",
-              borderRadius: 28, padding: "72px 80px",
-              display: "flex", flexDirection: "column", alignItems: "center", gap: 24, textAlign: "center",
-            }}>
-              <h3 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: "clamp(28px, 3.5vw, 48px)", textTransform: "uppercase", lineHeight: 1.1, color: "#fff", margin: 0 }}>
-                Like what you see?<br />
-                <span style={{ color: "#d0ff71" }}>There&apos;s more.</span>
-              </h3>
-              <p style={{ fontFamily: "var(--font-inter)", fontSize: 15, color: "#888", maxWidth: 440, lineHeight: 1.7, margin: 0 }}>
-                Get monthly inspiration, blog updates, and creative process notes — handcrafted for fellow creators.
-              </p>
-              <form style={{ display: "flex", gap: 12, width: "100%", maxWidth: 400 }} onSubmit={e => e.preventDefault()}>
-                <input type="email" placeholder="your@email.com"
+          {/* Browse All Insights CTA */}
+          <Reveal>
+            <div style={{ display: "flex", justifyContent: "center", marginTop: 56 }}>
+              <Link href="/blogs" style={{ textDecoration: "none" }}>
+                <motion.div whileHover={{ scale: 1.04, background: "#d0ff71", color: "#000" }} whileTap={{ scale: 0.96 }}
+                  transition={{ duration: 0.2 }}
                   style={{
-                    flex: 1, background: "#111112", border: "1px solid #333",
-                    color: "#fff", fontFamily: "var(--font-inter)", fontSize: 14,
-                    padding: "13px 20px", borderRadius: 999, outline: "none",
-                  }}
-                />
-                <motion.button type="submit"
-                  whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
-                  style={{
-                    background: "#d0ff71", color: "#111",
-                    fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13,
-                    letterSpacing: "0.12em", textTransform: "uppercase",
-                    padding: "13px 24px", borderRadius: 999, border: "none",
-                    cursor: "pointer", whiteSpace: "nowrap",
-                  }}
-                >
-                  Subscribe
-                </motion.button>
-              </form>
+                    display: "inline-flex", alignItems: "center",
+                    border: "1px solid #d0ff71", borderRadius: 999,
+                    padding: "14px 40px",
+                    fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 16,
+                    textTransform: "uppercase", letterSpacing: "0.1em",
+                    color: "#d0ff71", cursor: "pointer",
+                  }}>
+                  Browse All Insights
+                </motion.div>
+              </Link>
             </div>
-          </section>
-        </Reveal>
+          </Reveal>
+        </section>
 
       </main>
       <Footer />

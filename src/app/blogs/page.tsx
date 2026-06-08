@@ -4,152 +4,99 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Reveal } from "@/components/Reveal";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
+function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-60px 0px" });
+  return (
+    <motion.div ref={ref} initial={{ opacity: 0, y: 48 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.75, delay, ease: [0.25, 0.46, 0.45, 0.94] }}>
+      {children}
+    </motion.div>
+  );
+}
+
+const featured = {
+  badge: "Product Management", date: "Apr 27, 2025", mostViewed: true,
+  title: "HOW TO SCALE QUALITY WITH BETA TESTING",
+  desc: "Master the art of pre-launch validation to eliminate UX friction and ensure a seamless product debut.",
+  href: "/blogs/how-to-scale-quality-with-beta-testing",
+  img: "/images/tZsUTzJDASlMX3KgH1WIKykXNXs.png",
+};
 
 const blogs = [
-  {
-    category: "Content & Brand Marketing",
-    date: "Mar 30, 2025",
-    title: "The Content Flywheel: Scaling Brand Authority",
-    desc: "Discover how a unified content strategy turns one-off posts into a self-sustaining engine for organic growth and trust.",
-    href: "/blogs/the-content-flywheel",
-    img: "/images/iQwuEVadqLZLDnwjblKI9Kro8Ss.png",
-    readTime: "5 min read",
-  },
-  {
-    category: "Business Analysis & Strategy",
-    date: "Apr 22, 2025",
-    title: "The Strategic Audit: Maximizing Business Efficiency",
-    desc: "Learn how to identify operational bottlenecks and leverage data-driven insights to streamline your brand's core workflows.",
-    href: "/blogs/the-strategic-audit",
-    img: "/images/k6ZrTq3gELjvgT07LsIHjYqPc.png",
-    readTime: "7 min read",
-  },
-  {
-    category: "Product Management",
-    date: "Apr 27, 2025",
-    title: "How to Scale Quality with Beta Testing",
-    desc: "Master the art of pre-launch validation to eliminate UX friction and ensure a seamless product debut.",
-    href: "/blogs/how-to-scale-quality-with-beta-testing",
-    img: "/images/tZsUTzJDASlMX3KgH1WIKykXNXs.png",
-    readTime: "6 min read",
-  },
-  {
-    category: "Business Analysis & Strategy",
-    date: "Apr 30, 2025",
-    title: "Competitive Analysis for the Modern Startup",
-    desc: "Map the market landscape to identify competitor weaknesses and carve out your brand's unique edge.",
-    href: "/blogs/competitive-analysis-for-the-modern-startup",
-    img: "/images/lwzpnzdk6KYdLO6WwJnKqEu8U.png",
-    readTime: "8 min read",
-  },
-  {
-    category: "Community & Product Growth",
-    date: "May 2, 2025",
-    title: "From Beta Users to Brand Ambassadors",
-    desc: "Leverage the power of 'building in public' to turn early product testers into a self-sustaining marketing community.",
-    href: "/blogs/from-beta-users-to-brand-ambassadors",
-    img: "/images/w62D2elwRl3kxN0uECK3T9rjOXY.png",
-    readTime: "6 min read",
-  },
+  { badge: "Content & Brand Marketing", date: "Mar 30, 2025", title: "THE CONTENT FLYWHEEL: SCALING BRAND AUTHORITY", desc: "Discover how a unified content strategy turns one-off posts into a self-sustaining engine for organic growth and trust.", href: "/blogs/the-content-flywheel", img: "/images/iQwuEVadqLZLDnwjblKI9Kro8Ss.png" },
+  { badge: "Business Analysis & Strategy", date: "Apr 22, 2025", title: "THE STRATEGIC AUDIT: MAXIMIZING BUSINESS EFFICIENCY", desc: "Learn how to identify operational bottlenecks and leverage data-driven insights to streamline your brand's core workflows.", href: "/blogs/the-strategic-audit", img: "/images/k6ZrTq3gELjvgT07LsIHjYqPc.png" },
+  { badge: "Business Analysis & Strategy", date: "Apr 30, 2025", title: "COMPETITIVE ANALYSIS FOR THE MODERN STARTUP", desc: "Map the market landscape to identify competitor weaknesses and carve out your brand's unique edge.", href: "/blogs/competitive-analysis-for-the-modern-startup", img: "/images/lwzpnzdk6KYdLO6WwJnKqEu8U.png" },
+  { badge: "Community & Product Growth", date: "May 2, 2025", title: "FROM BETA USERS TO BRAND AMBASSADORS", desc: "Leverage the power of 'building in public' to turn early product testers into a self-sustaining marketing community.", href: "/blogs/from-beta-users-to-brand-ambassadors", img: "/images/w62D2elwRl3kxN0uECK3T9rjOXY.png" },
 ];
-
-const categoryColor = (cat: string) => {
-  const map: Record<string, string> = {
-    "Content & Brand Marketing":    "bg-accent/10 text-accent border border-accent/20",
-    "Business Analysis & Strategy": "bg-indigo/10 text-indigo border border-indigo/20",
-    "Product Management":           "bg-green/10 text-green border border-green/20",
-    "Community & Product Growth":   "bg-red/10 text-red border border-red/20",
-  };
-  return map[cat] ?? "bg-accent/10 text-accent border border-accent/20";
-};
 
 export default function BlogsPage() {
   return (
     <>
       <Header />
-      <main className="pt-28 pb-20 max-w-[1200px] mx-auto px-6">
+      <style>{`body{background:#1a1a1b;} @media(max-width:768px){.blog-grid{grid-template-columns:1fr!important;}}`}</style>
+      <main style={{ background: "#1a1a1b", paddingTop: 120 }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 60px 120px" }}>
 
-        <Reveal>
-          <div className="flex flex-col gap-4 mb-16">
-            <span className="font-antonio font-bold uppercase text-[13px] tracking-[3px] text-accent">
-              Insights & Writing
-            </span>
-            <h1 className="font-antonio font-bold text-[52px] md:text-[72px] uppercase leading-[0.95] text-text">
-              Blogs
+          {/* H1 */}
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+            <h1 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 120, lineHeight: "132px", letterSpacing: "-3.6px", textTransform: "uppercase", color: "#fff", margin: "0 0 60px" }}>
+              Insights &<br />Strategy
             </h1>
-            <p className="font-inter text-[16px] text-muted leading-relaxed max-w-[520px] mt-2">
-              Thoughts on business strategy, content creation, product management, and market analysis.
-            </p>
-          </div>
-        </Reveal>
+          </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {blogs.map((b, i) => (
-            <Reveal key={i} delay={i * 0.07}>
-              <Link href={b.href}>
-                <motion.article
-                  whileHover={{ y: -8, borderColor: "var(--accent)" }}
-                  transition={{ duration: 0.3, ease: [0.33, 1, 0.68, 1] }}
-                  className="card-hover bg-card border border-border rounded-[24px] overflow-hidden flex flex-col h-full"
-                >
-                  <div className="w-full aspect-[16/9] overflow-hidden">
-                    <motion.img
-                      src={b.img} alt={b.title}
-                      whileHover={{ scale: 1.04 }}
-                      transition={{ duration: 0.4 }}
-                      className="w-full h-full object-cover"
-                    />
+          {/* Featured blog — full width */}
+          <Reveal>
+            <Link href={featured.href} style={{ textDecoration: "none", display: "block", marginBottom: 40 }}>
+              <motion.div whileHover={{ scale: 1.006 }} transition={{ duration: 0.3 }}
+                style={{ background: "#1e1e1f", borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+                <div style={{ width: "100%", aspectRatio: "16/7", overflow: "hidden", position: "relative" }}>
+                  <img src={featured.img} alt={featured.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                  <div style={{ position: "absolute", top: 20, left: 20, display: "flex", gap: 10 }}>
+                    <span style={{ background: "#d0ff71", color: "#000", fontFamily: "var(--font-inter)", fontSize: 13, fontWeight: 600, padding: "5px 14px", borderRadius: 999 }}>
+                      MOST VIEWED
+                    </span>
+                    <span style={{ background: "rgba(0,0,0,0.6)", color: "#fff", border: "1px solid rgba(255,255,255,0.2)", fontFamily: "var(--font-inter)", fontSize: 13, fontWeight: 400, padding: "5px 14px", borderRadius: 999 }}>
+                      {featured.badge}
+                    </span>
                   </div>
-                  <div className="p-6 flex flex-col gap-3 flex-1">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className={`badge ${categoryColor(b.category)}`}>{b.category}</span>
+                </div>
+                <div style={{ padding: "32px 40px 36px" }}>
+                  <p style={{ fontFamily: "var(--font-inter)", fontSize: 13, color: "rgba(255,255,255,0.45)", margin: "0 0 10px" }}>{featured.date}</p>
+                  <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 36, textTransform: "uppercase", lineHeight: 1.25, color: "#fff", margin: "0 0 14px" }}>{featured.title}</h2>
+                  <p style={{ fontFamily: "var(--font-inter)", fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: 0 }}>{featured.desc}</p>
+                </div>
+              </motion.div>
+            </Link>
+          </Reveal>
+
+          {/* 2-col grid for remaining blogs */}
+          <div className="blog-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 40, marginBottom: 60 }}>
+            {blogs.map((b, i) => (
+              <Reveal key={i} delay={i * 0.07}>
+                <Link href={b.href} style={{ textDecoration: "none", display: "block", height: "100%" }}>
+                  <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}
+                    style={{ background: "#1e1e1f", borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", display: "flex", flexDirection: "column", height: "100%" }}>
+                    <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden" }}>
+                      <img src={b.img} alt={b.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
                     </div>
-                    <div className="flex items-center gap-2 text-[12px] text-muted font-inter">
-                      <span>{b.date}</span>
-                      <span>·</span>
-                      <span>{b.readTime}</span>
+                    <div style={{ padding: "24px 28px 28px", flex: 1, display: "flex", flexDirection: "column", gap: 10 }}>
+                      <span style={{ background: "transparent", color: "#d0ff71", border: "1px solid rgba(208,255,113,0.35)", borderRadius: 999, padding: "4px 12px", alignSelf: "flex-start", fontFamily: "var(--font-inter)", fontSize: 12, fontWeight: 400 }}>{b.badge}</span>
+                      <span style={{ fontFamily: "var(--font-inter)", fontSize: 13, color: "rgba(255,255,255,0.4)" }}>{b.date}</span>
+                      <h3 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 22, textTransform: "uppercase", lineHeight: 1.3, color: "#fff", margin: 0 }}>{b.title}</h3>
+                      <p style={{ fontFamily: "var(--font-inter)", fontSize: 14, fontWeight: 300, color: "rgba(255,255,255,0.6)", lineHeight: 1.65, margin: 0, flex: 1 }}>{b.desc}</p>
                     </div>
-                    <h2 className="font-antonio font-bold text-[20px] leading-[1.2] text-text">{b.title}</h2>
-                    <p className="font-inter text-[14px] text-muted leading-relaxed">{b.desc}</p>
-                    <div className="mt-auto pt-4 flex items-center gap-1 font-antonio font-bold text-[13px] uppercase tracking-[1px] text-accent">
-                      Read Post <span className="text-[16px]">→</span>
-                    </div>
-                  </div>
-                </motion.article>
-              </Link>
-            </Reveal>
-          ))}
+                  </motion.div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+
         </div>
-
-        {/* Newsletter section */}
-        <Reveal>
-          <div className="mt-24 bg-card border border-border rounded-[32px] p-10 md:p-16 flex flex-col items-center gap-6 text-center">
-            <h3 className="font-antonio font-bold text-[32px] md:text-[42px] uppercase leading-[1.1] text-text">
-              Like what you see?<br />
-              <span className="text-accent">There&apos;s more.</span>
-            </h3>
-            <p className="font-inter text-[15px] text-muted max-w-[480px] leading-relaxed">
-              Get monthly inspiration, blog updates, and creative process notes — handcrafted for fellow creators.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-3 w-full max-w-[420px]">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 bg-bg border border-border text-text font-inter text-[14px] px-5 py-3.5 rounded-full outline-none focus:border-accent transition-colors"
-              />
-              <motion.button
-                type="submit"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.97 }}
-                className="bg-accent text-dark font-antonio font-bold uppercase tracking-[1.5px] text-[13px] px-7 py-3.5 rounded-full whitespace-nowrap"
-              >
-                Subscribe
-              </motion.button>
-            </form>
-          </div>
-        </Reveal>
-
       </main>
       <Footer />
     </>

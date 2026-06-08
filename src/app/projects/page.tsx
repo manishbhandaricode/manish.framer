@@ -4,125 +4,99 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Reveal } from "@/components/Reveal";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-const projects = [
-  {
-    badge: "Report", year: "2025", industry: "Finance", client: "Perccent", duration: "6 weeks",
-    title: "Unlocking India's Untapped Investor Segments",
-    desc: "In-depth analysis of Minor and NRI participation, barriers, and strategic opportunities to drive inclusive market growth.",
-    href: "/projects/unlocking-india's-untapped-investor-segments",
-    img: "/images/nDHCjPrlqtG6mOmj2oiCsjD8Y.png",
-  },
-  {
-    badge: "Report", year: "2025", industry: "Wealthtech", client: "Perccent", duration: "3 weeks",
-    title: "Dezerv: The 8x AUM Growth Story",
-    desc: "Comprehensive analysis of Dezerv's rapid AUM growth from ₹1,265 cr to over ₹10,000 cr in two years, highlighting its transparent fee model, AI-driven portfolio engine, and strategic investments.",
-    href: "/projects/dezerv",
-    img: "/images/oFEHRfUjlxL61HaDFkrYEau1ekM.png",
-  },
-  {
-    badge: "Research", year: "2025", industry: "E-commerce", client: "ShopEase", duration: "3 weeks",
-    title: "Mutual Fund Goals and Investor Alignment",
-    desc: "Research focused on aligning mutual fund categories with investor financial goals to enhance engagement and simplify investment decisions.",
-    href: "/projects/shopease-redesign-sprint",
-    img: "/images/oRsdrqp2gE6sSLBWIb9RzABkPVg.png",
-  },
-  {
-    badge: "Pitch Deck", year: "2025", industry: "HR-as-a-Service (HRaaS)", client: "Crystal Peak", duration: "2 weeks",
-    title: "Crystal Peak Pitch Deck",
-    desc: "A strategic HR proposal focused on bridging the gap between business vision and precision recruitment through data-driven talent solutions. It outlines a framework for achieving 30% faster hiring and 85% role-fit alignment using real-time KPI tracking.",
-    href: "/projects/crystal-peak",
-    img: "/images/tp7x5VoKKEmYx7s57KofuIMJddE.png",
-  },
-  {
-    badge: "Report", year: "2025", industry: "Wealth tech", client: "Perccent", duration: "4 weeks",
-    title: "Kuvera: Analysis of Strategic Growth, Market Position, and Financial Performance",
-    desc: "Deep-dive analysis of Kuvera's strategic positioning, market dynamics, and financial performance in the competitive wealthtech landscape.",
-    href: "/projects/kuvera-analysis",
-    img: "/images/iQwuEVadqLZLDnwjblKI9Kro8Ss.png",
-  },
-  {
-    badge: "User Stories", year: "2024", industry: "Wealth Tech", client: "Perccent", duration: "2 weeks",
-    title: "User Stories Development for Enhanced Wealthtech Product Design",
-    desc: "Developing comprehensive user stories to align product design with investor needs and enhance the overall wealthtech user experience.",
-    href: "/projects/user-stories",
-    img: "/images/tZsUTzJDASlMX3KgH1WIKykXNXs.png",
-  },
-  {
-    badge: "Dashboard", year: "2025", industry: "Healthcare", client: "Apollo Hospital", duration: "5 weeks",
-    title: "Legal Compliance Framework in Hospital Management Dashboard",
-    desc: "Designing a comprehensive legal compliance framework dashboard to streamline regulatory adherence for hospital management systems.",
-    href: "/projects/hospital-management-system",
-    img: "/images/tvqGTWAzICR8R2aDEJVFu2RYhYM.png",
-  },
+function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-60px 0px" });
+  return (
+    <motion.div ref={ref} initial={{ opacity: 0, y: 48 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.75, delay, ease: [0.25, 0.46, 0.45, 0.94] }}>
+      {children}
+    </motion.div>
+  );
+}
+
+const featured = [
+  { badge: "Report", title: "UNLOCKING INDIA'S UNTAPPED INVESTOR SEGMENTS", desc: "In-depth analysis of Minor and NRI participation, barriers, and strategic opportunities to drive inclusive market growth.", href: "#", img: "/images/nDHCjPrlqtG6mOmj2oiCsjD8Y.png" },
+  { badge: "Report", title: "DEZERV: THE 8X AUM GROWTH STORY", desc: "Comprehensive analysis of Dezerv's rapid AUM growth from ₹1,265 cr to over ₹10,000 cr in two years, highlighting its transparent fee model, AI-driven portfolio engine, and strategic investments in technology and client experience.", href: "#", img: "/images/oFEHRfUjlxL61HaDFkrYEau1ekM.png" },
+  { badge: "Research", title: "MUTUAL FUND GOALS AND INVESTOR ALIGNMENT", desc: "Research focused on aligning mutual fund categories with investor financial goals to enhance engagement and simplify investment decisions.", href: "#", img: "/images/oRsdrqp2gE6sSLBWIb9RzABkPVg.png" },
+  { badge: "Pitch Deck", title: "CRYSTAL PEAK PITCH DECK", desc: "A strategic HR proposal focused on bridging the gap between business vision and precision recruitment through data-driven talent solutions.", href: "#", img: "/images/tp7x5VoKKEmYx7s57KofuIMJddE.png" },
 ];
 
-const badgeColor = (badge: string) => {
-  const map: Record<string, string> = {
-    "Report": "bg-indigo/10 text-indigo border border-indigo/20",
-    "Research": "bg-green/10 text-green border border-green/20",
-    "Pitch Deck": "bg-red/10 text-red border border-red/20",
-    "User Stories": "bg-accent/10 text-accent border border-accent/20",
-    "Dashboard": "bg-amber-400/10 text-amber-400 border border-amber-400/20",
-  };
-  return map[badge] ?? "bg-accent/10 text-accent border border-accent/20";
-};
+const more = [
+  { badge: "Report", title: "KUVERA: ANALYSIS OF STRATEGIC GROWTH, MARKET POSITION, AND FINANCIAL PERFORMANCE", desc: "A detailed research report analyzing Kuvera's growth trajectory, strategic acquisition rationale, market positioning in the competitive wealthtech space.", img: "/images/iQwuEVadqLZLDnwjblKI9Kro8Ss.png" },
+  { badge: "User Stories", title: "USER STORIES DEVELOPMENT FOR ENHANCED WEALTHTECH PRODUCT DESIGN", desc: "Created detailed user stories to capture functional requirements and improve client interactions in wealthtech platforms.", img: "/images/tZsUTzJDASlMX3KgH1WIKykXNXs.png" },
+  { badge: "Dashboard", title: "LEGAL COMPLIANCE FRAMEWORK IN HOSPITAL MANAGEMENT DASHBOARD", desc: "This dashboard is specifically designed for hospital management teams to understand and monitor legal compliance requirements within a Hospital Management System (HMS).", img: "/images/tvqGTWAzICR8R2aDEJVFu2RYhYM.png" },
+];
 
 export default function ProjectsPage() {
   return (
     <>
       <Header />
-      <main className="pt-28 pb-20 max-w-[1200px] mx-auto px-6">
+      <style>{`body{background:#1a1a1b;} @media(max-width:768px){.more-grid{grid-template-columns:1fr!important;}}`}</style>
+      <main style={{ background: "#1a1a1b", paddingTop: 120 }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 60px 120px" }}>
 
-        <Reveal>
-          <div className="flex flex-col gap-4 mb-16">
-            <span className="font-antonio font-bold uppercase text-[13px] tracking-[3px] text-accent">
-              Portfolio
-            </span>
-            <h1 className="font-antonio font-bold text-[52px] md:text-[72px] uppercase leading-[0.95] text-text">
+          {/* H1 */}
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+            <h1 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 120, lineHeight: "132px", letterSpacing: "-3.6px", textTransform: "uppercase", color: "#fff", margin: "0 0 24px" }}>
               Featured Projects
             </h1>
-            <p className="font-inter text-[16px] text-muted leading-relaxed max-w-[600px] mt-2">
+            <p style={{ fontFamily: "var(--font-inter)", fontSize: 16, fontWeight: 300, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, maxWidth: 720, margin: "0 0 60px" }}>
               Showcasing a selection of my work, including research, reports, and user stories that highlight my approach to analysis, communication, and problem-solving.
             </p>
+          </motion.div>
+
+          {/* Featured — single column */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 40, marginBottom: 80 }}>
+            {featured.map((p, i) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <Link href={p.href} style={{ textDecoration: "none" }}>
+                  <motion.div whileHover={{ scale: 1.006 }} transition={{ duration: 0.3 }}
+                    style={{ background: "#1e1e1f", borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+                    <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      <img src={p.img} alt={p.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                      <div style={{ position: "absolute", top: 20, left: 20 }}>
+                        <span style={{ background: "#d0ff71", color: "#000", fontFamily: "var(--font-inter)", fontSize: 13, fontWeight: 600, padding: "5px 14px", borderRadius: 999 }}>{p.badge}</span>
+                      </div>
+                    </div>
+                    <div style={{ padding: "32px 40px 36px" }}>
+                      <h3 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 32, textTransform: "uppercase", lineHeight: 1.25, color: "#fff", margin: "0 0 14px" }}>{p.title}</h3>
+                      <p style={{ fontFamily: "var(--font-inter)", fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, margin: 0 }}>{p.desc}</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </Reveal>
+            ))}
           </div>
-        </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((p, i) => (
-            <Reveal key={i} delay={i * 0.07}>
-              <Link href={p.href}>
-                <motion.article
-                  whileHover={{ y: -8, borderColor: "var(--accent)" }}
-                  transition={{ duration: 0.3, ease: [0.33, 1, 0.68, 1] }}
-                  className="card-hover bg-card border border-border rounded-[24px] overflow-hidden flex flex-col h-full"
-                >
-                  <div className="w-full aspect-[16/9] overflow-hidden">
-                    <motion.img
-                      src={p.img} alt={p.title}
-                      whileHover={{ scale: 1.04 }}
-                      transition={{ duration: 0.4 }}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-7 flex flex-col gap-3 flex-1">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className={`badge ${badgeColor(p.badge)}`}>{p.badge}</span>
-                      <span className="font-inter text-[12px] text-muted">{p.year} · {p.industry} · {p.client} · {p.duration}</span>
-                    </div>
-                    <h2 className="font-antonio font-bold text-[22px] leading-[1.2] text-text">{p.title}</h2>
-                    <p className="font-inter text-[14px] text-muted leading-relaxed">{p.desc}</p>
-                    <div className="mt-auto pt-4 flex items-center gap-1 font-antonio font-bold text-[13px] uppercase tracking-[1px] text-accent">
-                      View Project <span className="text-[16px]">→</span>
+          {/* More Projects — 2-column grid */}
+          <Reveal>
+            <h2 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 60, textTransform: "uppercase", color: "#fff", margin: "0 0 40px" }}>More Projects</h2>
+          </Reveal>
+          <div className="more-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 40 }}>
+            {more.map((p, i) => (
+              <Reveal key={i} delay={i * 0.07}>
+                <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}
+                  style={{ background: "#1e1e1f", borderRadius: 20, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", display: "flex", flexDirection: "column" }}>
+                  <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                    <img src={p.img} alt={p.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                    <div style={{ position: "absolute", top: 16, left: 16 }}>
+                      <span style={{ background: "#d0ff71", color: "#000", fontFamily: "var(--font-inter)", fontSize: 12, fontWeight: 600, padding: "4px 12px", borderRadius: 999 }}>{p.badge}</span>
                     </div>
                   </div>
-                </motion.article>
-              </Link>
-            </Reveal>
-          ))}
+                  <div style={{ padding: "24px 28px 28px", flex: 1 }}>
+                    <h3 style={{ fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 22, textTransform: "uppercase", lineHeight: 1.3, color: "#fff", margin: "0 0 12px" }}>{p.title}</h3>
+                    <p style={{ fontFamily: "var(--font-inter)", fontSize: 14, fontWeight: 300, color: "rgba(255,255,255,0.6)", lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
+                  </div>
+                </motion.div>
+              </Reveal>
+            ))}
+          </div>
         </div>
-
       </main>
       <Footer />
     </>
