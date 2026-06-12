@@ -356,19 +356,12 @@ export default function HomePage() {
                 <ServiceAccordion />
               </Reveal>
             </div>
-            {/* Right: 3D MB sphere */}
+            {/* Right: Image */}
             <Reveal delay={0.15}>
-              <div style={{ flexShrink: 0, width: 260, display: "flex", alignItems: "center", justifyContent: "center", paddingTop: 60 }}>
-                <div style={{
-                  width: 220, height: 220, borderRadius: "50%",
-                  background: "radial-gradient(circle at 35% 35%, #383838, #080808)",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  boxShadow: "inset -10px -10px 24px rgba(0,0,0,0.9), inset 5px 5px 12px rgba(255,255,255,0.05), 0 24px 60px rgba(0,0,0,0.7)",
-                  border: "1px solid rgba(255,255,255,0.06)",
-                }}>
-                  <span style={{ fontFamily: "Antonio, sans-serif", fontWeight: 700, fontSize: 64, color: "rgba(255,255,255,0.88)", letterSpacing: "-2px", textShadow: "2px 2px 8px rgba(0,0,0,0.9)" }}>
-                    MB
-                  </span>
+              <div style={{ flexShrink: 0, width: 360 }}>
+                <div style={{ width: "100%", aspectRatio: "3/4", borderRadius: 20, overflow: "hidden", border: "2px solid rgba(255,255,255,0.12)", boxShadow: "0 24px 60px rgba(0,0,0,0.6)" }}>
+                  <img src="/images/ebetiWQPcHPDtKIGda53B8Y1vg0.jpg" alt="Services"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
                 </div>
               </div>
             </Reveal>
