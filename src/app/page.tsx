@@ -414,14 +414,19 @@ export default function HomePage() {
               </Reveal>
             </div>
             {/* Right: portrait */}
-            <Reveal delay={0.1}>
-              <div style={{ flexShrink: 0, width: 360 }}>
-                <div style={{ width: "100%", aspectRatio: "3/4", borderRadius: 20, overflow: "hidden", border: "2px solid rgba(255,255,255,0.12)", boxShadow: "0 24px 60px rgba(0,0,0,0.6)" }}>
-                  <img src="/images/mIm9lrb8l1W8blmrYlGXhMAdo.png" alt="Manish Bhandari"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
-                </div>
+            {/* Right: portrait with flip animation */}
+            <motion.div 
+              initial={{ rotateY: 90, opacity: 0, z: -100 }}
+              whileInView={{ rotateY: 0, opacity: 1, z: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              style={{ flexShrink: 0, width: 360, perspective: 1200 }}
+            >
+              <div style={{ width: "100%", aspectRatio: "3/4", borderRadius: 20, overflow: "hidden", border: "2px solid rgba(255,255,255,0.12)", boxShadow: "0 24px 60px rgba(0,0,0,0.6)", transformStyle: "preserve-3d" }}>
+                <img src="/images/mIm9lrb8l1W8blmrYlGXhMAdo.png" alt="Manish Bhandari"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
               </div>
-            </Reveal>
+            </motion.div>
           </div>
         </section>
 
