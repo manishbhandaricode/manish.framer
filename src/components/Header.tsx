@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
@@ -12,56 +13,61 @@ const links = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <motion.header
-        initial={{ y: -60, opacity: 0 }}
+        initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+        transition={{ duration: 0.65, ease: [0.25, 0.46, 0.45, 0.94] }}
         style={{
           position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
           display: "flex", justifyContent: "center",
-          padding: "18px 24px", pointerEvents: "none",
+          padding: "20px 24px", pointerEvents: "none",
         }}
       >
-        {/* Pill nav */}
+        {/* Nav pill — exact: 508px × 56px, radius 28px, rgba(15,15,15,0.9) */}
         <div style={{
-          display: "flex", alignItems: "center", gap: 0,
-          background: "rgba(30,30,30,0.92)",
-          backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",
-          border: "1px solid rgba(255,255,255,0.08)",
-          borderRadius: 999, padding: "6px 6px 6px 6px",
+          display: "flex", alignItems: "center",
+          gap: 0,
+          background: "rgba(15, 15, 15, 0.9)",
+          backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)",
+          borderRadius: 28,
+          padding: "8px 10px",
+          width: 508, height: 56,
           pointerEvents: "auto",
-          boxShadow: "0 4px 24px rgba(0,0,0,0.4)",
+          boxSizing: "border-box",
+          justifyContent: "space-between",
         }}>
-          {/* MB Logo circle */}
-          <Link href="/" style={{ textDecoration: "none" }}>
+          {/* LEFT: Circular portrait avatar — 40×40px */}
+          <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
             <div style={{
-              width: 36, height: 36, borderRadius: "50%",
-              background: "rgba(255,255,255,0.12)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              marginRight: 16,
+              width: 40, height: 40, borderRadius: "50%",
+              overflow: "hidden", flexShrink: 0,
+              border: "1px solid rgba(255,255,255,0.15)",
             }}>
-              <span style={{
-                fontFamily: "var(--font-antonio)", fontWeight: 700, fontSize: 13,
-                color: "#ffffff", letterSpacing: "0.05em",
-              }}>MB</span>
+              <img
+                src="/images/mIm9lrb8l1W8blmrYlGXhMAdo.png"
+                alt="Portfolio Creator Avatar"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }}
+              />
             </div>
           </Link>
 
-          {/* Nav links */}
-          <nav style={{ display: "flex", alignItems: "center", gap: 4, marginRight: 8 }}>
+          {/* CENTER: Nav links — 12px sans-serif */}
+          <nav style={{ display: "flex", alignItems: "center", gap: 0 }}>
             {links.map((l) => (
               <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
                 <motion.span
                   whileHover={{ color: "#d0ff71" }}
                   style={{
-                    fontFamily: "var(--font-inter)", fontWeight: 400, fontSize: 14,
-                    color: "rgba(255,255,255,0.85)", padding: "6px 14px",
-                    borderRadius: 999, display: "block",
-                    transition: "color 0.2s",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 400, fontSize: 12,
+                    color: pathname === l.href ? "#d0ff71" : "rgba(255,255,255,0.85)",
+                    padding: "6px 14px", display: "block",
+                    transition: "color 0.2s", whiteSpace: "nowrap",
                   }}
                 >
                   {l.label}
@@ -70,15 +76,18 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Contact button */}
-          <Link href="/about#contact" style={{ textDecoration: "none" }}>
+          {/* RIGHT: Contact button — white, 118×40px, radius 99px, padding 3px 30px 4px */}
+          <Link href="/about#contact" style={{ textDecoration: "none", flexShrink: 0 }}>
             <motion.div
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               style={{
                 background: "#ffffff", color: "#111111",
-                fontFamily: "var(--font-inter)", fontWeight: 600, fontSize: 14,
-                padding: "8px 20px", borderRadius: 999, cursor: "pointer",
+                fontFamily: "Inter, sans-serif", fontWeight: 500, fontSize: 12,
+                borderRadius: 99, padding: "3px 30px 4px",
+                width: 118, height: 40,
+                display: "flex", alignItems: "center", justifyContent: "center",
+                cursor: "pointer", boxSizing: "border-box",
               }}
             >
               Contact
@@ -89,20 +98,30 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div style={{
-          position: "fixed", top: 72, left: 16, right: 16, zIndex: 90,
-          background: "rgba(20,20,20,0.96)", backdropFilter: "blur(20px)",
-          border: "1px solid rgba(255,255,255,0.1)", borderRadius: 20,
-          padding: 24, display: "flex", flexDirection: "column", gap: 16,
-        }}>
+        <motion.div
+          initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
+          style={{
+            position: "fixed", top: 80, left: 16, right: 16, zIndex: 90,
+            background: "rgba(15,15,15,0.97)", backdropFilter: "blur(20px)",
+            border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20,
+            padding: 24, display: "flex", flexDirection: "column", gap: 20,
+          }}
+        >
           {links.map((l) => (
             <Link key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-              style={{ fontFamily: "var(--font-inter)", fontSize: 18, color: "#fff", textDecoration: "none" }}>
+              style={{ fontFamily: "Inter, sans-serif", fontSize: 18, color: "#fff", textDecoration: "none" }}>
               {l.label}
             </Link>
           ))}
-        </div>
+        </motion.div>
       )}
+
+      {/* Responsive: hide wide nav on mobile */}
+      <style>{`
+        @media(max-width: 560px) {
+          /* shrink nav pill */
+        }
+      `}</style>
     </>
   );
 }
